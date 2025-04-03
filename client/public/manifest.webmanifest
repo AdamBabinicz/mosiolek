@@ -1,0 +1,23 @@
+{
+  "name": "Paweł Mosiołek - Muzyk | Oficjalna strona",
+  "short_name": "Paweł Mosiołek",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "description": "Oficjalna strona Pawła Mosiołka - muzyka, kompozytora i artysty.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "pl",
+  "dir": "ltr"
+}
