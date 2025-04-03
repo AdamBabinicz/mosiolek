@@ -20,6 +20,7 @@ const Navbar = () => {
     { href: "#start", label: t('navbar.start') },
     { href: "#foto-teka", label: t('navbar.photos') },
     { href: "#tworca", label: t('navbar.creator') },
+    { href: "#dyskografia", label: t('navbar.discography') },
     { href: "#kontakt", label: t('navbar.contact') },
     { href: "#koncerty", label: t('navbar.concerts') },
   ];

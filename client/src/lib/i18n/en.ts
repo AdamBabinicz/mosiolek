@@ -13,6 +13,7 @@ export const translations = {
   'navbar.start': 'Home',
   'navbar.photos': 'Gallery',
   'navbar.creator': 'Artist',
+  'navbar.discography': 'Discography',
   'navbar.contact': 'Contact',
   'navbar.concerts': 'Concerts',
   
@@ -61,6 +62,10 @@ export const translations = {
   'creator.album2.alt': 'Time album cover',
   'creator.album3.title': 'Without Borders',
   'creator.album3.alt': 'Without Borders album cover',
+  
+  // Discography Section
+  'discography.tracklist': 'Tracklist',
+  'discography.listenButton': 'Listen to the album',
   
   // Contact Section
   'contact.title': 'Contact',

@@ -3,6 +3,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import HeroSection from "@/components/HeroSection";
 import PhotoGallery from "@/components/PhotoGallery";
 import CreatorSection from "@/components/CreatorSection";
+import DiscographySection from "@/components/DiscographySection";
 import ContactSection from "@/components/ContactSection";
 import ConcertsSection from "@/components/ConcertsSection";
 import { Helmet } from "react-helmet";
@@ -26,6 +27,7 @@ const Home = () => {
         <HeroSection />
         <PhotoGallery />
         <CreatorSection />
+        <DiscographySection />
         <ContactSection />
         <ConcertsSection />
       </main>

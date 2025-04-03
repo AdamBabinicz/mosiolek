@@ -13,6 +13,7 @@ export const translations = {
   'navbar.start': 'Start',
   'navbar.photos': 'Foto-teka',
   'navbar.creator': 'Twórca',
+  'navbar.discography': 'Dyskografia',
   'navbar.contact': 'Kontakt',
   'navbar.concerts': 'Koncerty',
   
@@ -61,6 +62,10 @@ export const translations = {
   'creator.album2.alt': 'Okładka albumu Czas',
   'creator.album3.title': 'Bez Granic',
   'creator.album3.alt': 'Okładka albumu Bez Granic',
+  
+  // Discography Section
+  'discography.tracklist': 'Lista utworów',
+  'discography.listenButton': 'Posłuchaj albumu',
   
   // Contact Section
   'contact.title': 'Kontakt',

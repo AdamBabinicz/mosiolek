@@ -92,6 +92,7 @@ export const SECTION_IDS = {
   START: "start",
   PHOTOS: "foto-teka",
   CREATOR: "tworca",
+  DISCOGRAPHY: "dyskografia",
   CONTACT: "kontakt",
   CONCERTS: "koncerty",
 };
