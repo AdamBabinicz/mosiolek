@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { 
@@ -15,6 +15,27 @@ type LanguageSwitcherProps = {
 const LanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => {
   const { language, changeLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  
+  // Zapewniamy, że kod działa tylko po stronie klienta
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Zwróć pusty przycisk podczas renderowania SSR/początkowego
+    if (isMobile) {
+      return <div className="flex space-x-2"></div>;
+    }
+    return (
+      <Button 
+        variant="ghost" 
+        className="flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 focus:outline-none transition"
+      >
+        <span>--</span>
+      </Button>
+    );
+  }
 
   if (isMobile) {
     return (
@@ -26,7 +47,10 @@ const LanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => {
               ? 'text-primary dark:text-blue-400'
               : 'text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400'
           } transition`}
-          onClick={() => changeLanguage('pl')}
+          onClick={() => {
+            console.log('Zmiana języka na PL');
+            changeLanguage('pl');
+          }}
         >
           PL
         </button>
@@ -38,7 +62,10 @@ const LanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => {
               ? 'text-primary dark:text-blue-400'
               : 'text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400'
           } transition`}
-          onClick={() => changeLanguage('en')}
+          onClick={() => {
+            console.log('Zmiana języka na EN');
+            changeLanguage('en');
+          }}
         >
           EN
         </button>
@@ -52,6 +79,7 @@ const LanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => {
         <Button 
           variant="ghost" 
           className="flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 focus:outline-none transition"
+          onClick={() => console.log('Wybieranie języka, aktualny:', language)}
         >
           <span>{language.toUpperCase()}</span>
           <svg className="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -62,13 +90,19 @@ const LanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => {
       <DropdownMenuContent align="end" className="w-24 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none">
         <DropdownMenuItem 
           className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-          onClick={() => changeLanguage('pl')}
+          onClick={() => {
+            console.log('Wybrano język: Polski');
+            changeLanguage('pl');
+          }}
         >
           Polski
         </DropdownMenuItem>
         <DropdownMenuItem 
           className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-          onClick={() => changeLanguage('en')}
+          onClick={() => {
+            console.log('Wybrano język: English');
+            changeLanguage('en');
+          }}
         >
           English
         </DropdownMenuItem>
