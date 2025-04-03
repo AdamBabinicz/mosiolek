@@ -1,10 +1,8 @@
-// Usunięto import useTranslation
-// import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/hooks/useTranslation";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
-  // Usunięto użycie useTranslation
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section id="start" className="relative overflow-hidden bg-gray-100 dark:bg-gray-800">
@@ -16,7 +14,7 @@ const HeroSection = () => {
               <span className="block text-blue-600 dark:text-blue-400">Mosiołek</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
-              Muzyk, kompozytor i wokalista z pasją do tworzenia wyjątkowych brzmień. Twórca muzyki łączącej elementy rocka, jazzu i klasyki.
+              {t('hero.description')}
             </p>
             <div className="mt-10 sm:flex">
               <div className="rounded-md shadow">
@@ -24,7 +22,7 @@ const HeroSection = () => {
                   asChild
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                 >
-                  <a href="#koncerty">Koncerty</a>
+                  <a href="#koncerty">{t('hero.buttonConcerts')}</a>
                 </Button>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -33,7 +31,7 @@ const HeroSection = () => {
                   variant="outline"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-gray-50 hover:bg-gray-100 dark:text-blue-400 dark:bg-gray-700 dark:hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
                 >
-                  <a href="#tworca">O mnie</a>
+                  <a href="#tworca">{t('hero.buttonAbout')}</a>
                 </Button>
               </div>
             </div>
@@ -42,7 +40,7 @@ const HeroSection = () => {
             <div className="aspect-w-3 aspect-h-4 rounded-lg shadow-xl overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
-                alt="Paweł Mosiołek - muzyk i kompozytor" 
+                alt={t('hero.imageAlt')} 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -54,8 +52,8 @@ const HeroSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-medium">Najnowszy singiel</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">"Nie dla czasu"</p>
+                  <p className="font-medium">{t('hero.latestSingle')}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">{t('hero.singleTitle')}</p>
                 </div>
               </div>
             </div>

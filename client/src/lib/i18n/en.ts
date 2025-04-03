@@ -29,6 +29,7 @@ export const translations = {
   'photos.title': 'Photo Gallery',
   'photos.description': 'Moments captured during concerts and studio sessions.',
   'photos.viewAllButton': 'View all photos',
+  'photos.closeButton': 'Close',
   'photos.photo1Alt': 'Paweł Mosiołek during a concert',
   'photos.photo1Caption': 'Concert at the Old Theatre, 2022',
   'photos.photo1Description': 'Moment during the performance on the main stage',

@@ -29,6 +29,7 @@ export const translations = {
   'photos.title': 'Foto-teka',
   'photos.description': 'Momenty uchwycone obiektywem podczas koncertów i sesji studyjnych.',
   'photos.viewAllButton': 'Zobacz wszystkie zdjęcia',
+  'photos.closeButton': 'Zamknij',
   'photos.photo1Alt': 'Paweł Mosiołek podczas koncertu',
   'photos.photo1Caption': 'Koncert w Teatrze Starym, 2022',
   'photos.photo1Description': 'Moment podczas występu na głównej scenie',
