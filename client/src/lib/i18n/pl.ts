@@ -50,9 +50,9 @@ export const translations = {
   
   // Creator Section
   'creator.title': 'Twórca',
-  'creator.paragraph1': 'Paweł Mosiołek to utalentowany muzyk i kompozytor, którego twórczość łączy w sobie elementy muzyki akustycznej, folku i nowoczesnych brzmień elektronicznych.',
-  'creator.paragraph2': 'Od ponad 15 lat aktywnie działa na polskiej scenie muzycznej, współpracując z wieloma uznanymi artystami i tworząc własne projekty. Jego charakterystyczny styl gry na gitarze oraz wrażliwość muzyczna pozwoliły mu zdobyć uznanie zarówno wśród krytyków, jak i słuchaczy.',
-  'creator.paragraph3': 'Twórczość Pawła Mosiołka to przede wszystkim muzyka z przesłaniem, pełna emocji i opowieści o życiu codziennym, miłości, przyjaźni i poszukiwaniu sensu. Jego teksty, pisane zarówno w języku polskim jak i angielskim, są osobistym spojrzeniem na rzeczywistość, która nas otacza.',
+  'creator.paragraph1': 'Paweł Mosiołek to muzyk, wokalista, pisze własne teksty oraz muzykę. Od kilku lat przekazuje słuchaczom melodie płynące prosto z serca. Dla Pawła w muzyce nie istnieje takie słowo jak granica. Udowadnia to współpracując z muzykami reprezentującymi różne dziedziny i style. Ma na swoim koncie mini-album „Nie dla czasu"',
+  'creator.paragraph2': 'Osiągnięcia:\n\nRMF Maxxx Festiwal Opole, „Szansa na sukces" TVP2, Laureat pierwszego miejsca w Muzycznych Kazikach w dwóch kategoriach: przebój i wokalista oraz nagroda Prezydenta Miasta Radomia, a także mediów Echa Dnia, „Dzień dobry TVN", czy „Pytanie na śniadanie" TVP2. Reportaż w Ekspresie Miłosierdzia TVP1, Eska Summer City, Jaka to melodia TVP1, O!Polskie Przeboje TVP, Gość Muzycznej Jedynki w Polskim Radio u Marii Szabłowskiej, Muzyczny Gość w Teleexpress TVP 1 u Marka Sierockiego, 57 Krajowy Festiwal Polskiej Piosenki Opole, Debiuty.',
+  'creator.paragraph3': 'Jego utwór "Nie dla czasu", poprzez który najbardziej stał się rozpoznawalny, jest emitowany w stacjach radiowych oraz w internecie.\n\nObecnie koncentruje się na dalszym autorskim materiale muzycznym oraz koncertach.',
   'creator.portraitAlt': 'Paweł Mosiołek portret',
   'creator.quote': 'Muzyka to dla mnie sposób na wyrażenie tego, co trudno ująć w słowa.',
   'creator.discographyTitle': 'Dyskografia',

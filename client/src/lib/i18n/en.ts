@@ -50,9 +50,9 @@ export const translations = {
   
   // Creator Section
   'creator.title': 'Artist',
-  'creator.paragraph1': 'Paweł Mosiołek is a talented musician and composer whose work combines elements of acoustic music, folk, and modern electronic sounds.',
-  'creator.paragraph2': 'For over 15 years, he has been active on the Polish music scene, collaborating with many acclaimed artists and creating his own projects. His characteristic guitar style and musical sensitivity have earned him recognition among both critics and listeners.',
-  'creator.paragraph3': 'Paweł Mosiołek\'s work is primarily music with a message, full of emotions and stories about everyday life, love, friendship, and the search for meaning. His lyrics, written in both Polish and English, are a personal look at the reality that surrounds us.',
+  'creator.paragraph1': 'Paweł Mosiołek is a musician, vocalist, and writes his own lyrics and music. For several years, he has been sharing melodies that come straight from the heart with his listeners. For Paweł, there is no such word as a boundary in music. He proves this by collaborating with musicians representing various fields and styles. He has released a mini-album "Nie dla czasu" (Not for Time).',
+  'creator.paragraph2': 'Achievements:\n\nRMF Maxxx Festival Opole, "Szansa na sukces" TVP2, Winner of first place in Muzyczne Kaziki in two categories: hit and vocalist, as well as the award of the President of Radom City, and media outlets Echa Dnia, "Dzień dobry TVN", and "Pytanie na śniadanie" TVP2. Report in Ekspress Miłosierdzia TVP1, Eska Summer City, Jaka to melodia TVP1, O!Polskie Przeboje TVP, Guest of Muzyczna Jedynka on Polish Radio with Maria Szabłowska, Musical Guest on Teleexpress TVP 1 with Marek Sierocki, 57th National Festival of Polish Song in Opole, Debuts.',
+  'creator.paragraph3': 'His song "Nie dla czasu" (Not for Time), through which he became most recognizable, is broadcast on radio stations and on the internet.\n\nCurrently, he is focusing on further original musical material and concerts.',
   'creator.portraitAlt': 'Paweł Mosiołek portrait',
   'creator.quote': 'Music is my way of expressing what is difficult to put into words.',
   'creator.discographyTitle': 'Discography',

@@ -1,5 +1,4 @@
-// Usunięto import useTranslation
-// import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface Album {
   id: number;
@@ -11,8 +10,7 @@ interface Album {
 }
 
 const CreatorSection = () => {
-  // Usunięto useTranslation
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const albums: Album[] = [
     {
@@ -84,18 +82,12 @@ const CreatorSection = () => {
           <div className="lg:order-2 mb-12 lg:mb-0">
             <div className="text-center lg:text-left">
               <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                O mnie
+                {t('creator.title')}
               </h2>
               <div className="mt-6 text-gray-600 dark:text-gray-300 space-y-4">
-                <p>
-                  Muzyka towarzyszy mi od najmłodszych lat. Pierwsze kroki stawiałem jako pianista, by później rozszerzyć swoje zainteresowania o śpiew i kompozycję.
-                </p>
-                <p>
-                  Moja twórczość to wyraz osobistych doświadczeń i refleksji nad otaczającym nas światem. Staram się łączyć różne style muzyczne, tworząc unikalny, rozpoznawalny dźwięk.
-                </p>
-                <p>
-                  Każdy album to osobna historia, nowy rozdział muzycznej podróży. Zapraszam Cię do wspólnego odkrywania tych muzycznych opowieści.
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t('creator.paragraph1') }}></p>
+                <p dangerouslySetInnerHTML={{ __html: t('creator.paragraph2') }}></p>
+                <p dangerouslySetInnerHTML={{ __html: t('creator.paragraph3') }}></p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a href="#" className="flex items-center text-blue-600 dark:text-blue-400 hover:underline">
@@ -139,7 +131,7 @@ const CreatorSection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                 </svg>
                 <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 italic">
-                  Muzyka to język, którym opowiadam moje historie.
+                  {t('creator.quote')}
                 </p>
               </div>
             </div>
@@ -148,7 +140,7 @@ const CreatorSection = () => {
         
         <div className="mt-24">
           <h3 className="text-2xl font-bold font-serif text-gray-900 dark:text-white text-center mb-12">
-            Moja dyskografia
+            {t('creator.discographyTitle')}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {albums.map((album) => (
