@@ -4,10 +4,10 @@ export const translations = {
   'seo.homeDescription': 'Official website of Paweł Mosiołek - musician, composer and artist. Discover his work, concerts and photo gallery.',
   
   // Cookie Banner
-  'cookies.title': 'We use cookies',
-  'cookies.description': 'This website uses cookies to ensure you get the best experience. You can customize your cookie preferences or accept all cookies.',
-  'cookies.essential': 'Essential only',
-  'cookies.acceptAll': 'Accept all',
+  'cookieBanner.title': 'We use cookies',
+  'cookieBanner.description': 'This website uses cookies to ensure you get the best experience. You can customize your cookie preferences or accept all cookies.',
+  'cookieBanner.essential': 'Essential only',
+  'cookieBanner.acceptAll': 'Accept all',
   
   // Navbar
   'navbar.start': 'Home',

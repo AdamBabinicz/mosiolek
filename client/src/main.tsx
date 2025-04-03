@@ -5,6 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { CookieConsentProvider } from "@/contexts/CookieConsentContext";
 
 // Pełna wersja z ThemeProvider i LanguageProvider
 const AppWithProviders = () => {
@@ -12,7 +13,9 @@ const AppWithProviders = () => {
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <ThemeProvider>
-          <App />
+          <CookieConsentProvider>
+            <App />
+          </CookieConsentProvider>
         </ThemeProvider>
       </LanguageProvider>
     </QueryClientProvider>

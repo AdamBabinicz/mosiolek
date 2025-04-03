@@ -6,7 +6,7 @@ import Home from "@/pages/Home";
 import CookieBanner from "@/components/CookieBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useCookieConsent } from "@/hooks/useCookieConsent";
+import { useCookieConsent } from "@/contexts/CookieConsentContext";
 
 function Router() {
   return (

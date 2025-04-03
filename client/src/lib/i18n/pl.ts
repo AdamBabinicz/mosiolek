@@ -4,10 +4,10 @@ export const translations = {
   'seo.homeDescription': 'Oficjalna strona Pawła Mosiołka - muzyka, kompozytora i artysty. Poznaj jego twórczość, koncerty i galerię zdjęć.',
   
   // Cookie Banner
-  'cookies.title': 'Używamy plików cookie',
-  'cookies.description': 'Ta strona wykorzystuje pliki cookie, aby zapewnić najlepsze doświadczenia. Możesz dostosować swoje preferencje dotyczące plików cookie lub zaakceptować wszystkie.',
-  'cookies.essential': 'Tylko niezbędne',
-  'cookies.acceptAll': 'Akceptuję wszystkie',
+  'cookieBanner.title': 'Używamy plików cookie',
+  'cookieBanner.description': 'Ta strona wykorzystuje pliki cookie, aby zapewnić najlepsze doświadczenia. Możesz dostosować swoje preferencje dotyczące plików cookie lub zaakceptować wszystkie.',
+  'cookieBanner.essential': 'Tylko niezbędne',
+  'cookieBanner.acceptAll': 'Akceptuję wszystkie',
   
   // Navbar
   'navbar.start': 'Start',
