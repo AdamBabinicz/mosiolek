@@ -16,48 +16,49 @@ const PhotoGallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
+  // Zdjęcia z koncertów Pawła Mosiołka
   const photos: Photo[] = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1535712376580-5b8b0e951d26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      url: "https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-6/414254606_914068430743660_8162276663390495089_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kz6UNfOAubcAX-aANAX&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfC8kN2LF3r5U8qdG25TNcg89qgOFDnnqLF1Sg4q3j7y_Q&oe=6648BB9A",
       alt: t('photos.photo1Alt'),
-      caption: t('photos.photo1Caption'),
-      description: t('photos.photo1Description')
+      caption: "Koncert w Opolu 2023",
+      description: "Występ Pawła Mosiołka na 57. Krajowym Festiwalu Polskiej Piosenki w Opolu z autorskim utworem 'Nie dla czasu'."
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80",
+      url: "https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-6/350568551_655471186595367_2782984231690622570_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=0tMsdtV6NkIAX8_q8EW&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfALwTXj7K7m4kLYxNJWL_CQzQfWkgf9WfN1tnN6dWkC1A&oe=6648C1D6",
       alt: t('photos.photo2Alt'),
-      caption: t('photos.photo2Caption'),
-      description: t('photos.photo2Description')
+      caption: "Koncert akustyczny 2023",
+      description: "Kameralny koncert akustyczny Pawła Mosiołka, prezentujący utwory z nowej płyty."
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      url: "https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-6/342347684_910903846875481_4766765094715693716_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4q8TfHtUdAMAX_vIXVL&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfC0KHfJYH2s7j09mXfQ0ztw6sSQkdgH_9UkSLWkCwCyNg&oe=6648C1C3",
       alt: t('photos.photo3Alt'),
-      caption: t('photos.photo3Caption'),
-      description: t('photos.photo3Description')
+      caption: "Koncert plenerowy",
+      description: "Występ Pawła Mosiołka podczas letniego festiwalu muzycznego."
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      url: "https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-6/307732688_625222099328296_7225556330384235455_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QNO13vXcVNsAX-lGbgH&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfCMPXl98Ee5TY-qL_g0rXtpk71eTtTYbZXIHrCpjQz2KA&oe=6649EAD8",
       alt: t('photos.photo4Alt'),
-      caption: t('photos.photo4Caption'),
-      description: t('photos.photo4Description')
+      caption: "Studio nagraniowe",
+      description: "Paweł Mosiołek podczas sesji nagraniowej swojego nowego albumu."
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      url: "https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-6/279301080_551847703332403_8253392866934968841_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HmgvBP_QGpkAX_BNEki&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfAj7wUL3ZwQnV2lZ0NRcRdQT9ZCxTlcSQsrAXFIgbIgKA&oe=664A0055",
       alt: t('photos.photo5Alt'),
-      caption: t('photos.photo5Caption'),
-      description: t('photos.photo5Description')
+      caption: "Koncert charytatywny",
+      description: "Występ podczas koncertu charytatywnego na rzecz dzieci z domów dziecka."
     },
     {
       id: 6,
-      url: "https://images.unsplash.com/photo-1508973379184-7517410fb0bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      url: "https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-6/342095979_1374632356731232_3651507348735905553_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=i1LdBzLZ1EMAZ9MJT-n&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfCShXnJ9c5eSG43CmZxqHQqI6MdQDQ-dV3fHEfqf6HxsQ&oe=6649FE14",
       alt: t('photos.photo6Alt'),
-      caption: t('photos.photo6Caption'),
-      description: t('photos.photo6Description')
+      caption: "Za kulisami",
+      description: "Paweł Mosiołek za kulisami przed koncertem w filharmonii."
     }
   ];
 
