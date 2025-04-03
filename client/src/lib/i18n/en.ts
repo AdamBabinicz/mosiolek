@@ -65,8 +65,53 @@ export const translations = {
   'creator.album3.alt': 'Without Borders album cover',
   
   // Discography Section
+  'discography.description': 'Discover Paweł Mosiołek\'s music through his albums. The complete discography of the artist from newest to older releases.',
   'discography.tracklist': 'Tracklist',
   'discography.listenButton': 'Listen to the album',
+  'discography.streamingService.spotify': 'Spotify',
+  'discography.streamingService.youtube': 'YouTube',
+  'discography.streamingService.appleMusic': 'Apple Music',
+  
+  // Album 1
+  'discography.album1.title': 'Space',
+  'discography.album1.alt': 'Space album cover',
+  'discography.album1.track1': 'Space (Intro)',
+  'discography.album1.track2': 'New Day',
+  'discography.album1.track3': 'In Silence',
+  'discography.album1.track4': 'Stop for a Moment',
+  'discography.album1.track5': 'Freedom',
+  'discography.album1.track6': 'Close to You',
+  'discography.album1.track7': 'Mystery',
+  'discography.album1.track8': 'Without Words',
+  'discography.album1.track9': 'Time for Change',
+  'discography.album1.track10': 'Space (Outro)',
+  
+  // Album 2
+  'discography.album2.title': 'Time',
+  'discography.album2.alt': 'Time album cover',
+  'discography.album2.track1': 'Beginning',
+  'discography.album2.track2': 'History',
+  'discography.album2.track3': 'Day by Day',
+  'discography.album2.track4': 'Memories',
+  'discography.album2.track5': 'Future',
+  'discography.album2.track6': 'Passing',
+  'discography.album2.track7': 'Eternity',
+  'discography.album2.track8': 'Moment',
+  'discography.album2.track9': 'Meeting',
+  'discography.album2.track10': 'Time Escapes',
+  
+  // Album 3
+  'discography.album3.title': 'Without Borders',
+  'discography.album3.alt': 'Without Borders album cover',
+  'discography.album3.track1': 'Journey',
+  'discography.album3.track2': 'No Limits',
+  'discography.album3.track3': 'Horizon',
+  'discography.album3.track4': 'Long Road',
+  'discography.album3.track5': 'Discovery',
+  'discography.album3.track6': 'New Place',
+  'discography.album3.track7': 'Endless',
+  'discography.album3.track8': 'Encounters',
+  'discography.album3.track9': 'Return',
   
   // Contact Section
   'contact.title': 'Contact',

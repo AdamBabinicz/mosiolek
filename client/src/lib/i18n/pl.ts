@@ -65,8 +65,53 @@ export const translations = {
   'creator.album3.alt': 'Okładka albumu Bez Granic',
   
   // Discography Section
+  'discography.description': 'Odkryj muzykę Pawła Mosiołka poprzez jego albumy. Pełna dyskografia artysty od najnowszych do starszych wydawnictw.',
   'discography.tracklist': 'Lista utworów',
   'discography.listenButton': 'Posłuchaj albumu',
+  'discography.streamingService.spotify': 'Spotify',
+  'discography.streamingService.youtube': 'YouTube',
+  'discography.streamingService.appleMusic': 'Apple Music',
+  
+  // Album 1
+  'discography.album1.title': 'Przestrzeń',
+  'discography.album1.alt': 'Okładka albumu Przestrzeń',
+  'discography.album1.track1': 'Przestrzeń (Intro)',
+  'discography.album1.track2': 'Nowy dzień',
+  'discography.album1.track3': 'W ciszy',
+  'discography.album1.track4': 'Zatrzymaj się na chwilę',
+  'discography.album1.track5': 'Wolność',
+  'discography.album1.track6': 'Blisko Ciebie',
+  'discography.album1.track7': 'Tajemnica',
+  'discography.album1.track8': 'Bez słów',
+  'discography.album1.track9': 'Czas na zmiany',
+  'discography.album1.track10': 'Przestrzeń (Outro)',
+  
+  // Album 2
+  'discography.album2.title': 'Czas',
+  'discography.album2.alt': 'Okładka albumu Czas',
+  'discography.album2.track1': 'Początek',
+  'discography.album2.track2': 'Historia',
+  'discography.album2.track3': 'Dzień po dniu',
+  'discography.album2.track4': 'Wspomnienia',
+  'discography.album2.track5': 'Przyszłość',
+  'discography.album2.track6': 'Przemijanie',
+  'discography.album2.track7': 'Wieczność',
+  'discography.album2.track8': 'Moment',
+  'discography.album2.track9': 'Spotkanie',
+  'discography.album2.track10': 'Czas ucieka',
+  
+  // Album 3
+  'discography.album3.title': 'Bez Granic',
+  'discography.album3.alt': 'Okładka albumu Bez Granic',
+  'discography.album3.track1': 'Podróż',
+  'discography.album3.track2': 'Bez granic',
+  'discography.album3.track3': 'Horyzont',
+  'discography.album3.track4': 'Daleka droga',
+  'discography.album3.track5': 'Odkrycie',
+  'discography.album3.track6': 'Nowe miejsce',
+  'discography.album3.track7': 'Bez końca',
+  'discography.album3.track8': 'Spotkania',
+  'discography.album3.track9': 'Powrót',
   
   // Contact Section
   'contact.title': 'Kontakt',
