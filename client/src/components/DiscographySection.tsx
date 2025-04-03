@@ -1,6 +1,4 @@
-// Usunięto importy useTranslation i useLanguage
-// import { useTranslation } from "@/hooks/useTranslation";
-// import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface Album {
   id: number;
@@ -12,9 +10,7 @@ interface Album {
 }
 
 const DiscographySection = () => {
-  // Usunięto używanie kontekstów
-  // const { t } = useTranslation();
-  // const { language } = useLanguage();
+  const { t } = useTranslation();
 
   const albums: Album[] = [
     {
@@ -80,10 +76,10 @@ const DiscographySection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            Dyskografia
+            {t('navbar.discography')}
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            Muzyka towarzyszy mi od najmłodszych lat. Pierwsze kroki stawiałem jako pianista, by później rozszerzyć swoje zainteresowania o śpiew i kompozycję.
+            {t('creator.paragraph1')}
           </p>
         </div>
 
@@ -128,7 +124,7 @@ const DiscographySection = () => {
                       </div>
                     </div>
                     <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                      Lista utworów
+                      {t('discography.tracklist')}
                     </h4>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                       {album.tracklist.map((track, index) => (
@@ -140,7 +136,7 @@ const DiscographySection = () => {
                   </div>
                   <div className="mt-6">
                     <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
-                      Posłuchaj albumu
+                      {t('discography.listenButton')}
                     </button>
                   </div>
                 </div>

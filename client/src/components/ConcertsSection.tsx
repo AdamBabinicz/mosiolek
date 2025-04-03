@@ -1,6 +1,5 @@
 import { useState } from "react";
-// Usunięto import useTranslation
-// import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/hooks/useTranslation";
 import { Button } from "@/components/ui/button";
 
 type ConcertStatus = 'upcoming' | 'past';
@@ -23,8 +22,7 @@ interface Concert {
 }
 
 const ConcertsSection = () => {
-  // Usunięto useTranslation
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<ConcertFilter>('all');
 
   const concerts: Concert[] = [
@@ -82,10 +80,10 @@ const ConcertsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            Koncerty
+            {t('concerts.title')}
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
-            Sprawdź gdzie i kiedy możesz usłyszeć moją muzykę na żywo. Kup bilety online lub przyjdź na darmowe wydarzenia.
+            {t('concerts.description')}
           </p>
         </div>
 
@@ -99,7 +97,7 @@ const ConcertsSection = () => {
                 : "px-4 py-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md shadow-sm hover:bg-gray-100 dark:hover:bg-gray-600"
             }
           >
-            Wszystkie
+            {t('concerts.filters.all')}
           </Button>
           <Button 
             onClick={() => filterByDate('upcoming')}
@@ -110,7 +108,7 @@ const ConcertsSection = () => {
                 : "px-4 py-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md shadow-sm hover:bg-gray-100 dark:hover:bg-gray-600"
             }
           >
-            Nadchodzące
+            {t('concerts.filters.upcoming')}
           </Button>
           <Button 
             onClick={() => filterByDate('past')}
@@ -121,7 +119,7 @@ const ConcertsSection = () => {
                 : "px-4 py-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md shadow-sm hover:bg-gray-100 dark:hover:bg-gray-600"
             }
           >
-            Minione
+            {t('concerts.filters.past')}
           </Button>
         </div>
 
@@ -171,13 +169,13 @@ const ConcertsSection = () => {
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      <span>Wydarzenie zakończone</span>
+                      <span>{t('concerts.eventEnded')}</span>
                     </div>
                   )}
                   
                   {concert.ticketLink && (
                     <a href={concert.ticketLink} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
-                      Kup bilet
+                      {t('concerts.buyTicket')}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -186,7 +184,7 @@ const ConcertsSection = () => {
                   
                   {concert.infoLink && (
                     <a href={concert.infoLink} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
-                      Więcej informacji
+                      {t('concerts.moreInfo')}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -195,7 +193,7 @@ const ConcertsSection = () => {
                   
                   {concert.photoLink && (
                     <a href={concert.photoLink} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
-                      Zdjęcia i relacje
+                      {t('concerts.photosAndReports')}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -209,7 +207,7 @@ const ConcertsSection = () => {
 
         <div className="text-center mt-12">
           <Button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700">
-            Zobacz wszystkie
+            {t('concerts.viewAllButton')}
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
