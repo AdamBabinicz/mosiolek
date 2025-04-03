@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useTranslation } from "@/hooks/useTranslation";
+// Usunięto import useTranslation
+// import { useTranslation } from "@/hooks/useTranslation";
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -18,17 +19,18 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
-  const { t } = useTranslation();
+  // Usunięto użycie useTranslation
+  // const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitSuccessful, setIsSubmitSuccessful] = useState(false);
 
   const formSchema = z.object({
-    name: z.string().min(2, { message: t('contact.errors.nameRequired') }),
-    email: z.string().email({ message: t('contact.errors.emailInvalid') }),
-    subject: z.string().min(2, { message: t('contact.errors.subjectRequired') }),
-    message: z.string().min(10, { message: t('contact.errors.messageRequired') }),
+    name: z.string().min(2, { message: "Imię jest wymagane (min. 2 znaki)" }),
+    email: z.string().email({ message: "Nieprawidłowy adres email" }),
+    subject: z.string().min(2, { message: "Temat jest wymagany (min. 2 znaki)" }),
+    message: z.string().min(10, { message: "Wiadomość musi mieć co najmniej 10 znaków" }),
     privacyPolicy: z.boolean().refine(val => val === true, {
-      message: t('contact.errors.privacyRequired'),
+      message: "Musisz zaakceptować politykę prywatności",
     }),
   });
 
@@ -55,13 +57,13 @@ const ContactSection = () => {
       form.reset();
       
       toast({
-        title: t('contact.successToastTitle'),
-        description: t('contact.successToastMessage'),
+        title: "Wiadomość wysłana",
+        description: "Dziękujemy za kontakt. Odezwiemy się wkrótce.",
       });
     } catch (error) {
       toast({
-        title: t('contact.errorToastTitle'),
-        description: t('contact.errorToastMessage'),
+        title: "Błąd",
+        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie później.",
         variant: "destructive",
       });
     }
@@ -72,10 +74,10 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            {t('contact.title')}
+            Kontakt
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
-            {t('contact.description')}
+            Masz pytanie? Chcesz zarezerwować występ? Skontaktuj się ze mną używając poniższego formularza.
           </p>
         </div>
 

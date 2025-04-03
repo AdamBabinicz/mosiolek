@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { LANGUAGE } from '@/lib/constants';
 
 export type Language = 'pl' | 'en';
 
@@ -8,53 +7,58 @@ interface LanguageContextType {
   changeLanguage: (lang: Language) => void;
 }
 
-// Create a context with a default value to avoid undefined checks
-const defaultValue: LanguageContextType = {
-  language: 'pl', // Default to Polish
-  changeLanguage: () => {}, // Empty function as placeholder
-};
-
-const LanguageContext = createContext<LanguageContextType>(defaultValue);
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pl'); // Default to Polish initially
+  const [language, setLanguage] = useState<Language>('pl'); // Domyślnie polski
+  const [mounted, setMounted] = useState(false);
 
-  // Initialize the language after component mounts (client-side only)
+  // Inicjalizacja języka po stronie klienta
   useEffect(() => {
-    // Check for saved language preference or use browser language
-    const savedLanguage = localStorage.getItem(LANGUAGE.STORAGE_KEY);
-    if (savedLanguage === LANGUAGE.OPTIONS.POLISH || savedLanguage === LANGUAGE.OPTIONS.ENGLISH) {
+    // Sprawdź zapisany język
+    const savedLanguage = localStorage.getItem('language');
+    
+    if (savedLanguage === 'pl' || savedLanguage === 'en') {
       setLanguage(savedLanguage as Language);
-      return;
+    } else {
+      // Sprawdź język przeglądarki
+      try {
+        const browserLang = navigator.language.split('-')[0].toLowerCase();
+        if (browserLang === 'en') {
+          setLanguage('en');
+        }
+        // W przeciwnym razie zostaw domyślny polski
+      } catch (error) {
+        console.error('Błąd podczas wykrywania języka przeglądarki:', error);
+      }
     }
     
-    // Use browser's language if available, otherwise default to Polish
-    try {
-      const browserLang = navigator.language.split('-')[0];
-      setLanguage(browserLang === 'en' ? 'en' : 'pl');
-    } catch (error) {
-      console.error('Error detecting browser language:', error);
-      // Keep the default 'pl'
-    }
+    setMounted(true);
   }, []);
 
+  // Funkcja do zmiany języka
   const changeLanguage = (lang: Language) => {
+    console.log('Zmiana języka na:', lang);
     setLanguage(lang);
-    try {
-      localStorage.setItem(LANGUAGE.STORAGE_KEY, lang);
-    } catch (error) {
-      console.error('Error saving language to localStorage:', error);
-    }
+    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
   };
 
+  // Wartość kontekstu
+  const value = {
+    language,
+    changeLanguage
+  };
+
+  // Nie renderuj dzieci, dopóki nie zostanie ustalony początkowy język
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage }}>
-      {children}
+    <LanguageContext.Provider value={value}>
+      {mounted ? children : null}
     </LanguageContext.Provider>
   );
 };
 
-export function useLanguage(): LanguageContextType {
+export function useLanguage() {
   const context = useContext(LanguageContext);
   
   if (context === undefined) {

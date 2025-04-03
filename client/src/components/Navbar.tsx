@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { useTranslation } from "@/hooks/useTranslation";
+// Usunięto import useTranslation
+// import { useTranslation } from "@/hooks/useTranslation";
 import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
+// import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  // Usunięto użycie useTranslation
+  // const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,13 +18,14 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  // Statyczne etykiety zamiast tłumaczeń
   const navItems = [
-    { href: "#start", label: t('navbar.start') },
-    { href: "#foto-teka", label: t('navbar.photos') },
-    { href: "#tworca", label: t('navbar.creator') },
-    { href: "#dyskografia", label: t('navbar.discography') },
-    { href: "#kontakt", label: t('navbar.contact') },
-    { href: "#koncerty", label: t('navbar.concerts') },
+    { href: "#start", label: "Start" },
+    { href: "#foto-teka", label: "Foto-teka" },
+    { href: "#tworca", label: "Twórca" },
+    { href: "#dyskografia", label: "Dyskografia" },
+    { href: "#kontakt", label: "Kontakt" },
+    { href: "#koncerty", label: "Koncerty" },
   ];
 
   return (
@@ -31,7 +34,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <span className="font-serif text-xl font-bold text-primary dark:text-blue-400">Paweł Mosiołek</span>
+              <span className="font-serif text-xl font-bold text-blue-600 dark:text-blue-400">Paweł Mosiołek</span>
             </Link>
           </div>
           
@@ -41,7 +44,7 @@ const Navbar = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition"
+                className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition"
                 onClick={closeMenu}
               >
                 {item.label}
@@ -50,7 +53,8 @@ const Navbar = () => {
             
             <div className="border-l border-gray-200 dark:border-gray-700 h-6 mx-2"></div>
             
-            <LanguageSwitcher />
+            {/* Tymczasowo usunięto przełącznik języka */}
+            {/* <LanguageSwitcher /> */}
             <ThemeToggle />
           </nav>
           
@@ -106,7 +110,8 @@ const Navbar = () => {
           <div className="border-t border-gray-200 dark:border-gray-700 my-3"></div>
           
           <div className="flex items-center justify-between px-3">
-            <LanguageSwitcher isMobile />
+            {/* Tymczasowo usunięto przełącznik języka */}
+            {/* <LanguageSwitcher isMobile /> */}
             <ThemeToggle />
           </div>
         </div>

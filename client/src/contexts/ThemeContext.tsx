@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { THEME } from '@/lib/constants';
 
 type Theme = 'light' | 'dark';
 
@@ -8,63 +7,63 @@ interface ThemeContextType {
   toggleTheme: () => void;
 }
 
-// Create a context with a default value to avoid undefined checks
-const defaultValue: ThemeContextType = {
-  theme: 'light', // Default to light theme
-  toggleTheme: () => {}, // Empty function as placeholder
-};
-
-const ThemeContext = createContext<ThemeContextType>(defaultValue);
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>('light'); // Default to light theme initially
-  const [isInitialized, setIsInitialized] = useState(false);
+  const [theme, setTheme] = useState<Theme>('light');
+  const [mounted, setMounted] = useState(false);
 
-  // Initialize theme after component mounts (client-side only)
+  // Inicjalizacja motywu po zamontowaniu komponentu
   useEffect(() => {
-    try {
-      // Check for saved theme preference or use device preference
-      const savedTheme = localStorage.getItem(THEME.STORAGE_KEY);
-      if (savedTheme && (savedTheme === THEME.OPTIONS.LIGHT || savedTheme === THEME.OPTIONS.DARK)) {
-        setTheme(savedTheme as Theme);
-      } else {
-        // Use system preference
-        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setTheme(isDarkMode ? 'dark' : 'light');
+    // Próba odczytania zapisanego motywu
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme === 'dark') {
+      setTheme('dark');
+      document.documentElement.classList.add('dark');
+    } else if (savedTheme === 'light') {
+      setTheme('light');
+      document.documentElement.classList.remove('dark');
+    } else {
+      // Jeśli nie ma zapisanego motywu, sprawdź preferencje systemu
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(prefersDark ? 'dark' : 'light');
+      if (prefersDark) {
+        document.documentElement.classList.add('dark');
       }
-    } catch (error) {
-      console.error('Error initializing theme:', error);
-      // Keep the default light theme
     }
-
-    setIsInitialized(true);
+    
+    setMounted(true);
   }, []);
 
-  // Apply theme to document
-  useEffect(() => {
-    if (!isInitialized) return;
-
-    try {
-      if (theme === 'dark') {
+  const toggleTheme = () => {
+    setTheme((prevTheme) => {
+      const newTheme = prevTheme === 'light' ? 'dark' : 'light';
+      
+      // Zastosuj nowy motyw natychmiast
+      if (newTheme === 'dark') {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
       
-      // Save theme preference
-      localStorage.setItem(THEME.STORAGE_KEY, theme);
-    } catch (error) {
-      console.error('Error applying theme:', error);
-    }
-  }, [theme, isInitialized]);
-
-  const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+      // Zapisz preferencję w localStorage
+      localStorage.setItem('theme', newTheme);
+      
+      return newTheme;
+    });
   };
 
+  const value = {
+    theme,
+    toggleTheme
+  };
+
+  // Nie renderuj dzieci, dopóki nie zostanie ustalony początkowy motyw
+  // aby uniknąć błysku niepokolorowanej zawartości
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+    <ThemeContext.Provider value={value}>
+      {mounted ? children : null}
     </ThemeContext.Provider>
   );
 };

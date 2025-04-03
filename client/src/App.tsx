@@ -7,7 +7,7 @@ import CookieBanner from "@/components/CookieBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useCookieConsent } from "@/hooks/useCookieConsent";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { Language } from "@/contexts/LanguageContext";
 
 function Router() {
   return (
@@ -20,11 +20,12 @@ function Router() {
 
 function App() {
   const { showCookieBanner } = useCookieConsent();
-  const { language } = useLanguage();
-
+  
+  // Ustawiamy język dokumentu za pomocą localStorage
   useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
+    const storedLanguage = localStorage.getItem('language') as Language || 'pl';
+    document.documentElement.lang = storedLanguage;
+  }, []);
 
   return (
     <>

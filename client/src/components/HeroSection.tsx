@@ -1,8 +1,10 @@
-import { useTranslation } from "@/hooks/useTranslation";
+// Usunięto import useTranslation
+// import { useTranslation } from "@/hooks/useTranslation";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
-  const { t } = useTranslation();
+  // Usunięto użycie useTranslation
+  // const { t } = useTranslation();
 
   return (
     <section id="start" className="relative overflow-hidden bg-gray-100 dark:bg-gray-800">
@@ -11,27 +13,27 @@ const HeroSection = () => {
           <div>
             <h1 className="text-4xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block">Paweł</span>
-              <span className="block text-primary dark:text-blue-400">Mosiołek</span>
+              <span className="block text-blue-600 dark:text-blue-400">Mosiołek</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
-              {t('hero.description')}
+              Muzyk, kompozytor i wokalista z pasją do tworzenia wyjątkowych brzmień. Twórca muzyki łączącej elementy rocka, jazzu i klasyki.
             </p>
             <div className="mt-10 sm:flex">
               <div className="rounded-md shadow">
                 <Button
                   asChild
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                 >
-                  <a href="#koncerty">{t('hero.buttonConcerts')}</a>
+                  <a href="#koncerty">Koncerty</a>
                 </Button>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-gray-50 hover:bg-gray-100 dark:text-blue-400 dark:bg-gray-700 dark:hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-gray-50 hover:bg-gray-100 dark:text-blue-400 dark:bg-gray-700 dark:hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
                 >
-                  <a href="#tworca">{t('hero.buttonAbout')}</a>
+                  <a href="#tworca">O mnie</a>
                 </Button>
               </div>
             </div>
@@ -40,18 +42,20 @@ const HeroSection = () => {
             <div className="aspect-w-3 aspect-h-4 rounded-lg shadow-xl overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
-                alt={t('hero.imageAlt')} 
+                alt="Paweł Mosiołek - muzyk i kompozytor" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-700 p-4 rounded-md shadow-lg z-10 max-w-xs dark:text-white">
               <div className="flex items-center space-x-2">
-                <div className="text-primary dark:text-blue-400">
-                  <i className="fas fa-music text-xl"></i>
+                <div className="text-blue-600 dark:text-blue-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
                 </div>
                 <div>
-                  <p className="font-medium">{t('hero.latestSingle')}</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">{t('hero.singleTitle')}</p>
+                  <p className="font-medium">Najnowszy singiel</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">"Nie dla czasu"</p>
                 </div>
               </div>
             </div>

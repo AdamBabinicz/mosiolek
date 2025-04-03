@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useTranslation } from "@/hooks/useTranslation";
+// Usunięto import useTranslation
+// import { useTranslation } from "@/hooks/useTranslation";
 import { Button } from "@/components/ui/button";
 
 type ConcertStatus = 'upcoming' | 'past';
@@ -22,19 +23,20 @@ interface Concert {
 }
 
 const ConcertsSection = () => {
-  const { t } = useTranslation();
+  // Usunięto useTranslation
+  // const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<ConcertFilter>('all');
 
   const concerts: Concert[] = [
     {
       id: 1,
       day: "15",
-      month: t('concerts.months.may'),
+      month: "Maj",
       year: "2023",
       time: "20:00",
-      title: t('concerts.concert1.title'),
-      description: t('concerts.concert1.description'),
-      venue: t('concerts.concert1.venue'),
+      title: "Wieczór z klasyką",
+      description: "Koncert muzyki klasycznej z repertuarem najwybitniejszych kompozytorów wszech czasów. W programie utwory Mozarta, Beethovena oraz Chopina.",
+      venue: "Filharmonia Narodowa, Warszawa",
       price: "50-120 PLN",
       ticketLink: "#",
       status: 'upcoming'
@@ -42,25 +44,25 @@ const ConcertsSection = () => {
     {
       id: 2,
       day: "22",
-      month: t('concerts.months.june'),
+      month: "Czerwiec",
       year: "2023",
       time: "19:30",
-      title: t('concerts.concert2.title'),
-      description: t('concerts.concert2.description'),
-      venue: t('concerts.concert2.venue'),
-      price: t('concerts.freeEntry'),
+      title: "Muzyka filmowa na żywo",
+      description: "Wyjątkowy koncert poświęcony najpiękniejszym motywom muzycznym z filmów. Usłyszycie tematy z 'Gwiezdnych Wojen', 'Władcy Pierścieni' i wielu innych.",
+      venue: "Centrum Kultury, Kraków",
+      price: "Wstęp wolny",
       infoLink: "#",
       status: 'upcoming'
     },
     {
       id: 3,
       day: "10",
-      month: t('concerts.months.april'),
+      month: "Kwiecień",
       year: "2023",
       time: "20:00",
-      title: t('concerts.concert3.title'),
-      description: t('concerts.concert3.description'),
-      venue: t('concerts.concert3.venue'),
+      title: "Jazz Night",
+      description: "Niezapomniany wieczór z muzyką jazzową. Improwizacje, standardy i nowe kompozycje w wykonaniu zespołu Jazz Collective.",
+      venue: "Blue Note Jazz Club, Poznań",
       price: "",
       photoLink: "#",
       status: 'past'
@@ -80,10 +82,10 @@ const ConcertsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            {t('concerts.title')}
+            Koncerty
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
-            {t('concerts.description')}
+            Sprawdź gdzie i kiedy możesz usłyszeć moją muzykę na żywo. Kup bilety online lub przyjdź na darmowe wydarzenia.
           </p>
         </div>
 
@@ -93,33 +95,33 @@ const ConcertsSection = () => {
             variant={activeFilter === 'all' ? 'default' : 'outline'}
             className={
               activeFilter === 'all' 
-                ? "px-4 py-2 bg-primary text-white rounded-md shadow-sm hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700" 
+                ? "px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700" 
                 : "px-4 py-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md shadow-sm hover:bg-gray-100 dark:hover:bg-gray-600"
             }
           >
-            {t('concerts.filters.all')}
+            Wszystkie
           </Button>
           <Button 
             onClick={() => filterByDate('upcoming')}
             variant={activeFilter === 'upcoming' ? 'default' : 'outline'}
             className={
               activeFilter === 'upcoming' 
-                ? "px-4 py-2 bg-primary text-white rounded-md shadow-sm hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700" 
+                ? "px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700" 
                 : "px-4 py-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md shadow-sm hover:bg-gray-100 dark:hover:bg-gray-600"
             }
           >
-            {t('concerts.filters.upcoming')}
+            Nadchodzące
           </Button>
           <Button 
             onClick={() => filterByDate('past')}
             variant={activeFilter === 'past' ? 'default' : 'outline'}
             className={
               activeFilter === 'past' 
-                ? "px-4 py-2 bg-primary text-white rounded-md shadow-sm hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700" 
+                ? "px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700" 
                 : "px-4 py-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md shadow-sm hover:bg-gray-100 dark:hover:bg-gray-600"
             }
           >
-            {t('concerts.filters.past')}
+            Minione
           </Button>
         </div>
 
@@ -132,7 +134,7 @@ const ConcertsSection = () => {
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <div className={`w-20 h-20 md:w-24 md:h-24 ${
                   concert.status === 'upcoming' 
-                    ? 'bg-primary dark:bg-blue-600 text-white' 
+                    ? 'bg-blue-600 dark:bg-blue-600 text-white' 
                     : 'bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-200'
                 } rounded-lg flex flex-col items-center justify-center`}>
                   <span className="text-2xl font-bold">{concert.day}</span>
@@ -148,27 +150,34 @@ const ConcertsSection = () => {
                 </p>
                 <div className="flex flex-wrap gap-4 items-center">
                   <div className="flex items-center text-gray-600 dark:text-gray-300">
-                    <i className="fas fa-map-marker-alt mr-2 text-primary dark:text-blue-400"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
                     <span>{concert.venue}</span>
                   </div>
                   
                   {concert.status === 'upcoming' && concert.price && (
                     <div className="flex items-center text-gray-600 dark:text-gray-300">
-                      <i className="fas fa-ticket-alt mr-2 text-primary dark:text-blue-400"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+                      </svg>
                       <span>{concert.price}</span>
                     </div>
                   )}
                   
                   {concert.status === 'past' && (
                     <div className="flex items-center text-gray-600 dark:text-gray-300">
-                      <i className="fas fa-check-circle mr-2 text-green-500"></i>
-                      <span>{t('concerts.eventEnded')}</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Wydarzenie zakończone</span>
                     </div>
                   )}
                   
                   {concert.ticketLink && (
-                    <a href={concert.ticketLink} className="inline-flex items-center text-primary dark:text-blue-400 hover:underline">
-                      {t('concerts.buyTicket')}
+                    <a href={concert.ticketLink} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                      Kup bilet
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -176,8 +185,8 @@ const ConcertsSection = () => {
                   )}
                   
                   {concert.infoLink && (
-                    <a href={concert.infoLink} className="inline-flex items-center text-primary dark:text-blue-400 hover:underline">
-                      {t('concerts.moreInfo')}
+                    <a href={concert.infoLink} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                      Więcej informacji
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -185,8 +194,8 @@ const ConcertsSection = () => {
                   )}
                   
                   {concert.photoLink && (
-                    <a href={concert.photoLink} className="inline-flex items-center text-primary dark:text-blue-400 hover:underline">
-                      {t('concerts.photosAndReports')}
+                    <a href={concert.photoLink} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                      Zdjęcia i relacje
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -199,8 +208,8 @@ const ConcertsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700">
-            {t('concerts.viewAllButton')}
+          <Button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700">
+            Zobacz wszystkie
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
