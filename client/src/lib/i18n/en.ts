@@ -144,6 +144,10 @@ export const translations = {
   'contact.contactInfo.addressLabel': 'Mailing Address',
   'contact.contactInfo.address': 'Art Agency "Music"<br>15 Concert Street<br>00-001 Warsaw, Poland',
   'contact.socialMedia.title': 'Social Media',
+  'contact.socialMedia.facebook': 'Facebook',
+  'contact.socialMedia.instagram': 'Instagram',
+  'contact.socialMedia.youtube': 'YouTube',
+  'contact.socialMedia.spotify': 'Spotify',
   
   // Concerts Section
   'concerts.title': 'Concerts',

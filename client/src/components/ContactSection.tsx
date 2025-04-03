@@ -246,19 +246,19 @@ const ContactSection = () => {
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white">{t('contact.socialMedia.title')}</h3>
                 <div className="mt-4 flex space-x-6">
                   <a href="https://www.facebook.com/PAWELMOSIOLEK1976" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition">
-                    <span className="sr-only">Facebook</span>
+                    <span className="sr-only">{t('contact.socialMedia.facebook')}</span>
                     <i className="fab fa-facebook-f text-2xl"></i>
                   </a>
                   <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition">
-                    <span className="sr-only">Instagram</span>
+                    <span className="sr-only">{t('contact.socialMedia.instagram')}</span>
                     <i className="fab fa-instagram text-2xl"></i>
                   </a>
                   <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition">
-                    <span className="sr-only">YouTube</span>
+                    <span className="sr-only">{t('contact.socialMedia.youtube')}</span>
                     <i className="fab fa-youtube text-2xl"></i>
                   </a>
                   <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition">
-                    <span className="sr-only">Spotify</span>
+                    <span className="sr-only">{t('contact.socialMedia.spotify')}</span>
                     <i className="fab fa-spotify text-2xl"></i>
                   </a>
                 </div>

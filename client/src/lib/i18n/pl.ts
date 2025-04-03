@@ -144,6 +144,10 @@ export const translations = {
   'contact.contactInfo.addressLabel': 'Adres do korespondencji',
   'contact.contactInfo.address': 'Agencja Artystyczna "Muzyka"<br>ul. Koncertowa 15<br>00-001 Warszawa',
   'contact.socialMedia.title': 'Media społecznościowe',
+  'contact.socialMedia.facebook': 'Facebook',
+  'contact.socialMedia.instagram': 'Instagram',
+  'contact.socialMedia.youtube': 'YouTube',
+  'contact.socialMedia.spotify': 'Spotify',
   
   // Concerts Section
   'concerts.title': 'Koncerty',
