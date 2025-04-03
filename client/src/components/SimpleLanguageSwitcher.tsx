@@ -6,6 +6,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem
 } from "@/components/ui/dropdown-menu";
+import { useLanguage, Language } from "@/contexts/LanguageContext";
 
 type LanguageSwitcherProps = {
   isMobile?: boolean;
@@ -14,7 +15,7 @@ type LanguageSwitcherProps = {
 const SimpleLanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState<string>('pl');
+  const { language, changeLanguage } = useLanguage();
   
   // Ensure the component only works on the client side
   useEffect(() => {
@@ -36,10 +37,8 @@ const SimpleLanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => 
     );
   }
 
-  const switchLanguage = (lang: string) => {
-    console.log(`Switching language to: ${lang}`);
-    setCurrentLanguage(lang);
-    // In a real application, this would update the language throughout the app
+  const switchLanguage = (lang: Language) => {
+    changeLanguage(lang);
   };
 
   if (isMobile) {
@@ -48,7 +47,7 @@ const SimpleLanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => 
         <button
           type="button"
           className={`inline-flex items-center px-3 py-2 text-sm font-medium ${
-            currentLanguage === 'pl'
+            language === 'pl'
               ? 'text-blue-600 dark:text-blue-400'
               : 'text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'
           } transition`}
@@ -60,7 +59,7 @@ const SimpleLanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => 
         <button
           type="button"
           className={`inline-flex items-center px-3 py-2 text-sm font-medium ${
-            currentLanguage === 'en'
+            language === 'en'
               ? 'text-blue-600 dark:text-blue-400'
               : 'text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'
           } transition`}
@@ -79,7 +78,7 @@ const SimpleLanguageSwitcher = ({ isMobile = false }: LanguageSwitcherProps) => 
           variant="ghost" 
           className="flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none transition"
         >
-          <span>{currentLanguage.toUpperCase()}</span>
+          <span>{language.toUpperCase()}</span>
           <svg className="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
           </svg>

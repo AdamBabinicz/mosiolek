@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
@@ -7,7 +7,6 @@ import CookieBanner from "@/components/CookieBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useCookieConsent } from "@/hooks/useCookieConsent";
-import { Language } from "@/contexts/LanguageContext";
 
 function Router() {
   return (
@@ -20,12 +19,6 @@ function Router() {
 
 function App() {
   const { showCookieBanner } = useCookieConsent();
-  
-  // Ustawiamy język dokumentu za pomocą localStorage
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem('language') as Language || 'pl';
-    document.documentElement.lang = storedLanguage;
-  }, []);
 
   return (
     <>

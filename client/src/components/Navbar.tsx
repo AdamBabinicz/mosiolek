@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { Link } from "wouter";
-// Usunięto import useTranslation
-// import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/hooks/useTranslation";
 import ThemeToggle from "./ThemeToggle";
 import SimpleLanguageSwitcher from "./SimpleLanguageSwitcher";
 
 const Navbar = () => {
-  // Usunięto użycie useTranslation
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,14 +16,14 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  // Statyczne etykiety zamiast tłumaczeń
+  // Tłumaczone etykiety
   const navItems = [
-    { href: "#start", label: "Start" },
-    { href: "#foto-teka", label: "Foto-teka" },
-    { href: "#tworca", label: "Twórca" },
-    { href: "#dyskografia", label: "Dyskografia" },
-    { href: "#kontakt", label: "Kontakt" },
-    { href: "#koncerty", label: "Koncerty" },
+    { href: "#start", label: t('navbar.start') },
+    { href: "#foto-teka", label: t('navbar.photos') },
+    { href: "#tworca", label: t('navbar.creator') },
+    { href: "#dyskografia", label: t('navbar.discography') },
+    { href: "#kontakt", label: t('navbar.contact') },
+    { href: "#koncerty", label: t('navbar.concerts') },
   ];
 
   return (
