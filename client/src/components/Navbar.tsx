@@ -3,7 +3,7 @@ import { Link } from "wouter";
 // Usunięto import useTranslation
 // import { useTranslation } from "@/hooks/useTranslation";
 import ThemeToggle from "./ThemeToggle";
-// import LanguageSwitcher from "./LanguageSwitcher";
+import SimpleLanguageSwitcher from "./SimpleLanguageSwitcher";
 
 const Navbar = () => {
   // Usunięto użycie useTranslation
@@ -53,8 +53,7 @@ const Navbar = () => {
             
             <div className="border-l border-gray-200 dark:border-gray-700 h-6 mx-2"></div>
             
-            {/* Tymczasowo usunięto przełącznik języka */}
-            {/* <LanguageSwitcher /> */}
+            <SimpleLanguageSwitcher />
             <ThemeToggle />
           </nav>
           
@@ -110,8 +109,7 @@ const Navbar = () => {
           <div className="border-t border-gray-200 dark:border-gray-700 my-3"></div>
           
           <div className="flex items-center justify-between px-3">
-            {/* Tymczasowo usunięto przełącznik języka */}
-            {/* <LanguageSwitcher isMobile /> */}
+            <SimpleLanguageSwitcher isMobile />
             <ThemeToggle />
           </div>
         </div>
