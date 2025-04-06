@@ -1,21 +1,9 @@
 [build]
-  # Określa katalog roboczy, w którym znajduje się Twoja aplikacja
   base = "."
-
-  # Określa komendę budującą Twoją aplikację
-  command = "npm run build"  # Możesz użyć "yarn build" lub innego polecenia, jeśli używasz innych narzędzi
-
-  # Określa katalog, w którym są umieszczane pliki po zakończeniu procesu budowania
-  publish = "dist"  # "build" w przypadku React, "dist" w przypadku Vite, itp.
-
-[context.production.environment]
-  # Możesz ustawić zmienne środowiskowe dla środowiska produkcyjnego
-  NODE_ENV = "production"
-  # Inne zmienne środowiskowe, jeśli są wymagane
-  API_URL = "https://api.example.com"
+  command = "npm run build"
+  publish = "dist"  # Publikuj całą zawartość folderu dist
 
 [[redirects]]
-  # Przykład konfiguracji przekierowań (np. dla SPA)
   from = "/*"
   to = "/index.html"
   status = 200
