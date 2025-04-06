@@ -8,7 +8,9 @@ export default defineConfig({
   plugins: [
     react(),
     runtimeErrorOverlay(),
-    themePlugin(),
+    themePlugin({
+      injectStyles: process.env.NODE_ENV !== "production", // Wyłączenie wstrzykiwania stylów w produkcji
+    }),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
