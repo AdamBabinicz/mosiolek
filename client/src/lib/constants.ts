@@ -10,9 +10,9 @@ export const SITE_URL = `https://${SITE_DOMAIN}`;
 // Social media links
 export const SOCIAL_LINKS = {
   FACEBOOK: "https://www.facebook.com/PAWELMOSIOLEK1976",
-  INSTAGRAM: "#", // Replace with actual URL when available
-  YOUTUBE: "#", // Replace with actual URL when available
-  SPOTIFY: "#", // Replace with actual URL when available
+  INSTAGRAM: "https://www.instagram.com/pawelmosiolek/",
+  YOUTUBE: "https://www.youtube.com/user/pawelmosiolek",
+  SPOTIFY: "https://open.spotify.com/artist/1PvGZp6n4B360g4hBVpGjz",
 };
 
 // Navigation scroll offset (to account for sticky header)

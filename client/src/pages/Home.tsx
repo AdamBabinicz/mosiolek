@@ -15,10 +15,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>{t('seo.homeTitle')}</title>
-        <meta name="description" content={t('seo.homeDescription')} />
-        <meta property="og:title" content={t('seo.homeTitle')} />
-        <meta property="og:description" content={t('seo.homeDescription')} />
+        <title>{t("seo.homeTitle")}</title>
+        <meta name="description" content={t("seo.homeDescription")} />
+        <meta property="og:title" content={t("seo.homeTitle")} />
+        <meta property="og:description" content={t("seo.homeDescription")} />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={window.location.href} />
         <html lang={language} />
