@@ -36,7 +36,7 @@ const Navbar = () => {
                 Paweł Mosiołek
               </span>
               <img
-                src="/assets/2.avif"
+                src="/assets/img/2.avif"
                 alt="..."
                 className="w-full max-w-[3rem] h-auto ml-6"
               />

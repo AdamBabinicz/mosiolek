@@ -44,7 +44,7 @@ const HeroSection = () => {
           <div className="mt-12 lg:mt-0 relative">
             <div className="aspect-w-3 aspect-h-4 rounded-lg shadow-xl overflow-hidden">
               <img
-                src="/assets/1.jpg"
+                src="/assets/2.avif"
                 alt={t("hero.imageAlt")}
                 className="w-full h-full object-cover"
               />

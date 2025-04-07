@@ -21,7 +21,7 @@ const DiscographySection = () => {
       title: t("discography.album2.title"),
       year: "2021-03-19",
       feat: t("discography.album2.feat"),
-      coverUrl: "/assets/2.webp",
+      coverUrl: "/assets/10.avif",
       listenUrl: "https://www.youtube.com/watch?v=pyNEZH2duPs",
       tracklist: [
         // t("discography.album2.track1"),
@@ -42,7 +42,7 @@ const DiscographySection = () => {
       title: t("discography.album19.title"),
       year: "2021-11-24",
       feat: t("discography.album19.feat"),
-      coverUrl: "/assets/9.jpg",
+      coverUrl: "/assets/9.avif",
       listenUrl: "https://www.youtube.com/watch?v=jieUXgnNpHU",
       tracklist: [
         // t("discography.album2.track1"),
@@ -63,7 +63,7 @@ const DiscographySection = () => {
       title: t("discography.album20.title"),
       year: "2022-10-09",
       feat: t("discography.album2.feat"),
-      coverUrl: "/assets/10.jpg",
+      coverUrl: "/assets/11.avif",
       listenUrl: "https://www.youtube.com/watch?v=pExOWE2r7JI",
       tracklist: [
         // t("discography.album2.track1"),
@@ -84,7 +84,7 @@ const DiscographySection = () => {
       title: t("discography.album22.title"),
       year: "2022-11-16",
       feat: "",
-      coverUrl: "/assets/11.webp",
+      coverUrl: "/assets/13.avif",
       listenUrl: "https://www.youtube.com/watch?v=bKwYjenojjw",
       tracklist: [
         // t("discography.album20.track1"),
@@ -104,7 +104,7 @@ const DiscographySection = () => {
       title: t("discography.album18.title"),
       year: "2023-01-24",
       feat: t("discography.album2.feat"),
-      coverUrl: "/assets/8.jpg",
+      coverUrl: "/assets/8.avif",
       listenUrl: "https://www.youtube.com/watch?v=-DQWY3D9SPI",
       tracklist: [
         // t("discography.album3.track1"),
@@ -124,7 +124,7 @@ const DiscographySection = () => {
       title: t("discography.album13.title"),
       year: "2023-05-30",
       feat: "",
-      coverUrl: "/assets/3.jpg",
+      coverUrl: "/assets/3.avif",
       listenUrl: "https://www.youtube.com/watch?v=AGnFP2oUZxk",
       tracklist: [
         // t("discography.album3.track1"),
@@ -144,7 +144,7 @@ const DiscographySection = () => {
       title: t("discography.album1.title"),
       year: "2023-08-01",
       feat: "",
-      coverUrl: "/assets/1.webp",
+      coverUrl: "/assets/1.avif",
       listenUrl: "https://www.youtube.com/watch?v=j6WheaJyHPg",
       tracklist: [
         // t("discography.album1.track1"),
@@ -165,7 +165,7 @@ const DiscographySection = () => {
       title: t("discography.album4.title"),
       year: "2023-08-01",
       feat: "",
-      coverUrl: "/assets/4.webp",
+      coverUrl: "/assets/5.avif",
       listenUrl: "https://www.youtube.com/watch?v=vtNqKiMl5UI",
       tracklist: [
         // t("discography.album3.track1"),
@@ -185,7 +185,7 @@ const DiscographySection = () => {
       title: t("discography.album5.title"),
       year: "2023-08-01",
       feat: "",
-      coverUrl: "/assets/5.webp",
+      coverUrl: "/assets/6.avif",
       listenUrl: "https://www.youtube.com/watch?v=El4HHwxI2Do",
       tracklist: [
         // t("discography.album3.track1"),
@@ -205,7 +205,7 @@ const DiscographySection = () => {
       title: t("discography.album14.title"),
       year: "2023-08-01",
       feat: "",
-      coverUrl: "/assets/4.jpg",
+      coverUrl: "/assets/7.avif",
       listenUrl: "https://www.youtube.com/watch?v=itQuj9twpwM",
       tracklist: [
         // t("discography.album3.track1"),
@@ -225,7 +225,7 @@ const DiscographySection = () => {
       title: t("discography.album15.title"),
       year: "2023-08-01",
       feat: "",
-      coverUrl: "/assets/5.jpg",
+      coverUrl: "/assets/14.avif",
       listenUrl: "https://www.youtube.com/watch?v=ZDX52ZcAA1I",
       tracklist: [
         // t("discography.album3.track1"),
@@ -245,7 +245,7 @@ const DiscographySection = () => {
       title: t("discography.album12.title"),
       year: "2024-01-03",
       feat: t("discography.album12.feat"),
-      coverUrl: "/assets/12.webp",
+      coverUrl: "/assets/15.avif",
       listenUrl: "https://www.youtube.com/watch?v=fxXBxSGcgdg",
       tracklist: [
         // t("discography.album3.track1"),
@@ -265,7 +265,7 @@ const DiscographySection = () => {
       title: t("discography.album11.title"),
       year: "2024-05-03",
       feat: t("discography.album11.feat"),
-      coverUrl: "/assets/2.jpg",
+      coverUrl: "/assets/16.avif",
       listenUrl: "https://www.youtube.com/watch?v=Dwt3fHhL17E",
       tracklist: [
         // t("discography.album3.track1"),
@@ -285,7 +285,7 @@ const DiscographySection = () => {
       title: t("discography.album21.title"),
       year: "2024-07-26",
       feat: t("discography.album21.feat"),
-      coverUrl: "/assets/11.jpg",
+      coverUrl: "/assets/17.avif",
       listenUrl: "https://www.youtube.com/watch?v=bKwYjenojjw",
       tracklist: [
         // t("discography.album20.track1"),
@@ -305,7 +305,7 @@ const DiscographySection = () => {
       title: t("discography.album10.title"),
       year: "2024-07-29",
       feat: "",
-      coverUrl: "/assets/10.webp",
+      coverUrl: "/assets/18.avif",
       listenUrl: "https://www.youtube.com/watch?v=GYNPujyw_oY",
       tracklist: [
         // t("discography.album3.track1"),
@@ -325,7 +325,7 @@ const DiscographySection = () => {
       title: t("discography.album3.title"),
       year: "2024-07-30",
       feat: "",
-      coverUrl: "/assets/3.webp",
+      coverUrl: "/assets/19.avif",
       listenUrl: "https://www.youtube.com/watch?v=br_BGIsVeCw",
       tracklist: [
         // t("discography.album3.track1"),
@@ -346,7 +346,7 @@ const DiscographySection = () => {
       title: t("discography.album6.title"),
       year: "2024-07-30",
       feat: "",
-      coverUrl: "/assets/6.webp",
+      coverUrl: "/assets/20.avif",
       listenUrl: "https://www.youtube.com/watch?v=X1eVW80mdKU",
       tracklist: [
         // t("discography.album3.track1"),
@@ -366,7 +366,7 @@ const DiscographySection = () => {
       title: t("discography.album16.title"),
       year: "2024-07-30",
       feat: "",
-      coverUrl: "/assets/6.jpg",
+      coverUrl: "/assets/21.avif",
       listenUrl: "https://www.youtube.com/watch?v=GYEiZr9uq4E",
       tracklist: [
         // t("discography.album3.track1"),
@@ -386,7 +386,7 @@ const DiscographySection = () => {
       title: t("discography.album17.title"),
       year: "2024-07-30",
       feat: "",
-      coverUrl: "/assets/7.jpg",
+      coverUrl: "/assets/22.avif",
       listenUrl: "https://www.youtube.com/watch?v=scvBZZ72hSQ",
       tracklist: [
         // t("discography.album3.track1"),
@@ -406,7 +406,7 @@ const DiscographySection = () => {
       title: t("discography.album8.title"),
       year: "2024-07-30",
       feat: "",
-      coverUrl: "/assets/8.webp",
+      coverUrl: "/assets/23.avif",
       listenUrl: "https://www.youtube.com/watch?v=VbpAeKZMypM",
       tracklist: [
         // t("discography.album3.track1"),
@@ -426,7 +426,7 @@ const DiscographySection = () => {
       title: t("discography.album9.title"),
       year: "2024-07-30",
       feat: "",
-      coverUrl: "/assets/9.webp",
+      coverUrl: "/assets/24.avif",
       listenUrl: "https://www.youtube.com/watch?v=U4KO8yjpkV8",
       tracklist: [
         // t("discography.album3.track1"),
@@ -446,7 +446,7 @@ const DiscographySection = () => {
       title: t("discography.album7.title"),
       year: "2024-08-30",
       feat: "",
-      coverUrl: "/assets/7.webp",
+      coverUrl: "/assets/25.avif",
       listenUrl: "https://www.youtube.com/watch?v=A0pRGE6W5vo",
       tracklist: [
         // t("discography.album3.track1"),

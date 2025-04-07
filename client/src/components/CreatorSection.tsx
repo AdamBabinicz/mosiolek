@@ -191,7 +191,7 @@ const CreatorSection = () => {
           <div className="lg:order-1 relative">
             <div className="aspect-w-3 aspect-h-4 lg:aspect-w-10 lg:aspect-h-12 rounded-lg shadow-xl overflow-hidden">
               <img
-                src="/assets/1.avif"
+                src="/assets/img/1.avif"
                 alt="Paweł Mosiołek - portret"
                 className="w-full h-full object-cover"
               />
