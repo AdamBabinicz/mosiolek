@@ -29,7 +29,7 @@ const ConcertsSection = () => {
     {
       id: 1,
       day: "06",
-      month: t("concerts.months.may"),
+      month: t("concerts.months.april"),
       year: "2025",
       time: "14:00",
       title: t("concerts.concert1.title"),
