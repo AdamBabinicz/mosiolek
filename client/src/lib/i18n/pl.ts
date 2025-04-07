@@ -2,7 +2,7 @@ export const translations = {
   // SEO
   "seo.homeTitle": "Paweł Mosiołek - Muzyk | Oficjalna strona",
   "seo.homeDescription":
-    "Oficjalna strona Pawła Mosiołka - muzyka, kompozytora i artysty. Poznaj jego twórczość, koncerty i galerię zdjęć.",
+    "Oficjalna strona Pawła Mosiołka, artysty, kompozytora i muzyka. Odkryj jego twórczość, koncerty, galerie zdjęć oraz najnowsze projekty artystyczne.",
 
   // Cookie Banner
   "cookieBanner.title": "Używamy plików cookie",
