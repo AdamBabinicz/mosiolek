@@ -251,6 +251,7 @@ const ConcertsSection = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                      aria-label={`Więcej informacji o koncercie ${concert.infoLink}`}
                     >
                       {t("concerts.moreInfo")}
                       <svg
