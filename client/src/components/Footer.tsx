@@ -24,6 +24,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                aria-label="Przejdź do profilu Pawła Mosiołka na Facebooku"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +46,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                aria-label="Przejdź do profilu Pawła Mosiołka na Instagramie"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +70,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                aria-label="Zobacz filmy Pawła Mosiołka na YouTube"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,26 +93,8 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                aria-label="Odwiedź profil Pawła Mosiołka na TikToku"
               >
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-5 h-5"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <circle cx="12" cy="12" r="4"></circle>
-                  <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
-                  <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
-                  <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
-                  <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
-                </svg> */}
                 <FaTiktok />
               </a>
               <a
@@ -117,6 +102,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                aria-label="Kup singiel 'Tylko dla nas' Pawła Mosiołka na Amazonie"
               >
                 <GrAmazon />
               </a>
