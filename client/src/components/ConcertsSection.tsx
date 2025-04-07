@@ -38,7 +38,7 @@ const ConcertsSection = () => {
       price: t("concerts.freeEntry"),
       infoLink:
         "https://www.facebook.com/photo/?fbid=1217513286426405&set=a.346465643531178",
-      status: "upcoming",
+      status: "past",
     },
     {
       id: 2,
