@@ -40,7 +40,7 @@ const PhotoGallery = () => {
     },
     {
       id: 4,
-      url: "/assets/img/16.avif",
+      url: "/assets/26.avif",
       alt: t("photos.photo4Alt"),
       caption: t("photos.photo4Caption"),
       description: t("photos.photo4Description"),

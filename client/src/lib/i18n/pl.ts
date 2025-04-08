@@ -47,9 +47,10 @@ export const translations = {
     "57 Krajowy Festiwal Polskiej Piosenki Opole Debiuty, 2020",
   "photos.photo3Description": "Tu rodzą się gwiazdy.",
   "photos.photo4Alt": "Nagranie studyjne",
-  "photos.photo4Caption": "W studio 'Koliber', 2020",
+  "photos.photo4Caption":
+    "Justyna Łysak - Jończyk i Paweł Mosiołek w teledysku 'Tylko w siebie wierz', 2020",
   "photos.photo4Description":
-    "Justyna Łysak - Jończyk i Paweł Mosiołek w teledysku 'Tylko w siebie wierz'.",
+    "Utwór „Tylko w siebie wierz” został napisany na III Festiwal Aktywności Fizycznej Osób Niepełnosprawnych EUROPARAGEDON. Jest pomyślany jako hymn osób niepełnoprawnych.",
   "photos.photo5Alt": "Paweł Mosiołek na koncercie parafialnym",
   "photos.photo5Caption": "Pożegnanie lata, 2024",
   "photos.photo5Description":
