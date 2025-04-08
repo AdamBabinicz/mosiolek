@@ -26,7 +26,7 @@ export const translations = {
   "hero.buttonAbout": "Meet the artist",
   "hero.imageAlt": "Paweł Mosiołek on stage",
   "hero.latestSingle": "Latest single",
-  "hero.singleTitle": '„Stop for a moment"',
+  "hero.singleTitle": '„Song about Radom"',
 
   // Photo Gallery
   "photos.title": "Photo Gallery",

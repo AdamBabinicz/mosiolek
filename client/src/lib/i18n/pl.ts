@@ -26,7 +26,7 @@ export const translations = {
   "hero.buttonAbout": "Poznaj artystę",
   "hero.imageAlt": "Paweł Mosiołek na scenie",
   "hero.latestSingle": "Najnowszy singiel",
-  "hero.singleTitle": '„Zatrzymaj się na chwilę"',
+  "hero.singleTitle": '„Piosenka o Radomiu"',
 
   // Photo Gallery
   "photos.title": "Foto-teka",
