@@ -14,6 +14,7 @@
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
       as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link
@@ -62,7 +63,12 @@
     />
     <meta property="og:url" content="https://pawelmosiolek.netlify.app" />
     <meta property="og:type" content="website" />
-    <link rel="preload" href="/theme.css" as="style" />
+    <link
+      rel="preload"
+      href="/theme.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <script type="application/ld+json">
       [
         {
@@ -252,20 +258,6 @@
       })(window, document, "script", "dataLayer", "GTM-MG794MP5");
     </script>
     <!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-    <!-- <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-F3BD7B85Z3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-F3BD7B85Z3");
-    </script> -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
