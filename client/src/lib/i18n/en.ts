@@ -444,24 +444,30 @@ export const translations = {
   "concerts.months.october": "Oct",
   "concerts.months.november": "Nov",
   "concerts.months.december": "Dec",
-  "concerts.eventEnded": "Event ended",
-  "concerts.freeEntry": "Free entry",
-  "concerts.buyTicket": "Buy ticket",
-  "concerts.moreInfo": "More info",
-  "concerts.photosAndReports": "Photos and reports",
-  "concerts.viewAllButton": "View all concerts",
-  "concerts.concert1.title": "Birthday concert for Staś Zieliński",
+  "concerts.eventEnded": "Event Ended",
+  "concerts.freeEntry": "Free Entry",
+  "concerts.buyTicket": "Buy Ticket",
+  "concerts.moreInfo": "More Info",
+  "concerts.photosAndReports": "Reports and Photos",
+  "concerts.viewAllButton": "See All Concerts",
+  "concerts.concert1.title": "Birthday Concert for Stasia Zielińska",
   "concerts.concert1.description":
-    "Starts at 2:00 PM. My performance is scheduled for 5:40 PM, but it's worth coming earlier as there will be many attractions and performances by other artists.",
-  "concerts.concert1.venue": "Public Elementary School, Jastrząb",
-  "concerts.concert2.title": "Playing for Hania Terlecka",
+    "Start at 14:00. My performance is scheduled for 17:40, but it's worth coming earlier because there will be many attractions and performances by other artists.",
+  "concerts.concert1.venue": "Public Primary School, Jastrząb",
+  "concerts.concert1.moreInfo":
+    "More information about the birthday concert for Stasia Zielińska",
+  "concerts.concert2.title": "We Play for Hania Terlecka",
   "concerts.concert2.description":
-    'A charity concert organized by the "Ostrowiecki Rap" group for Hania Terlecka, who is suffering from cancer. The proceeds from the concert were donated to the girl◝s treatment and rehabilitation.',
-  "concerts.concert2.venue": "Hotel Accademia, Ostrowiec Św. ",
-  "concerts.concert3.title": "10th anniversary of Ostrowiecki Rap",
+    'A charity concert organized by the "Ostrowiecki Rap" group for Hania Terlecka, who is battling cancer. All proceeds from the concert were donated to her treatment and rehabilitation.',
+  "concerts.concert2.venue": "Hotel Accademia, Ostrowiec Św.",
+  "concerts.concert2.moreInfo":
+    "More information about the charity concert for Hania Terlecka",
+  "concerts.concert3.title": "10th Anniversary of Ostrowiecki Rap",
   "concerts.concert3.description":
-    "Ostrowiecki Rap is a group of young and ambitious people who find fulfillment in creating hip-hop music, connecting generations and residents of the city. The mentor and ambassador of Ostrowiekiego Rapu is Krystian 'mC' Szafiński.",
-  "concerts.concert3.venue": "Świętokrzyski City Park, Pier (Molo)",
+    "Ostrowiecki Rap is a group of young and ambitious people who fulfill themselves by creating hip-hop music, uniting generations and the city's residents. The mentor and ambassador of Ostrowiecki Rap is Krystian 'mC' Szafiński.",
+  "concerts.concert3.venue": "Świętokrzyski Park Miejski, Molo",
+  "concerts.concert3.moreInfo":
+    "More information about the 10th anniversary of Ostrowiecki Rap",
 
   // Footer
   "footer.start": "Home",

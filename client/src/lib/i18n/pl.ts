@@ -457,14 +457,20 @@ export const translations = {
   "concerts.concert1.description":
     "Start o godzinie 14.00. Mój występ przewidziany jest na godz. 17:40, ale warto być wcześniej, ponieważ będzie wiele atrakcji oraz występy innych wykonawców.",
   "concerts.concert1.venue": "Publiczna Szkoła Podstawowa, Jastrząb",
+  "concerts.concert1.moreInfo":
+    "Więcej informacji o urodzinowym koncercie Stasia Zielińskiego",
   "concerts.concert2.title": "Gramy dla Hani Terleckiej",
   "concerts.concert2.description":
     'Charytatywny koncert zorganizowany przez grupę "Ostrowiecki Rap" dla chorej na raka Hani Terleckiej. Dochód z koncertu przekazano na leczenie i rehabilitację dziewczynki.',
-  "concerts.concert2.venue": "Hotel Accademia, Ostrowiec Św. ",
+  "concerts.concert2.venue": "Hotel Accademia, Ostrowiec Św.",
+  "concerts.concert2.moreInfo":
+    "Więcej informacji o charytatywnym koncercie dla Hani Terleckiej",
   "concerts.concert3.title": "10 urodziny Ostrowieckiego Rapu",
   "concerts.concert3.description":
     "Ostrowiecki Rap to grupa młodych i ambitnych ludzi, którzy spełniają się tworząc muzykę hip-hopową, łączą pokolenia i mieszkańców miasta. Mentorem, a tym samym ambasadorem Ostrowiekiego Rapu jest Krystian 'mC' Szafiński.",
   "concerts.concert3.venue": "Świętokrzyski Park Miejski, Molo",
+  "concerts.concert3.moreInfo":
+    "Więcej informacji o 10-leciu Ostrowieckiego Rapu",
 
   // Footer
   "footer.start": "Strona główna",
