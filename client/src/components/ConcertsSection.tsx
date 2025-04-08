@@ -185,6 +185,7 @@ const ConcertsSection = () => {
                   {concert.status === "upcoming" && concert.price && (
                     <div className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400"
                         fill="none"
@@ -205,6 +206,7 @@ const ConcertsSection = () => {
                   {concert.status === "past" && (
                     <div className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5 mr-2 text-green-500"
                         fill="none"
@@ -232,6 +234,7 @@ const ConcertsSection = () => {
                     >
                       {t("concerts.buyTicket")}
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4 ml-1"
                         viewBox="0 0 20 20"
@@ -257,6 +260,7 @@ const ConcertsSection = () => {
                     >
                       {t("concerts.moreInfo")}
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4 ml-1"
                         viewBox="0 0 20 20"
@@ -281,6 +285,7 @@ const ConcertsSection = () => {
                     >
                       {t("concerts.photosAndReports")}
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4 ml-1"
                         viewBox="0 0 20 20"
