@@ -1,6 +1,6 @@
 export const translations = {
   // SEO
-  "seo.homeTitle": "Paweł Mosiołek - Muzyk | Oficjalna strona",
+  "seo.homeTitle": "Paweł Mosiołek - Muzyk, Artysta | Oficjalna strona",
   "seo.homeDescription":
     "Oficjalna strona Pawła Mosiołka, artysty, kompozytora i muzyka. Poznaj jego twórczość, koncerty, galerie zdjęć oraz projekty artystyczne. +48604103409",
 
