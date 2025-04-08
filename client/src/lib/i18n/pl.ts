@@ -50,7 +50,7 @@ export const translations = {
   "photos.photo4Caption":
     "Justyna Łysak - Jończyk i Paweł Mosiołek w teledysku 'Tylko w siebie wierz', 2020",
   "photos.photo4Description":
-    "Utwór „Tylko w siebie wierz” został napisany na III Festiwal Aktywności Fizycznej Osób Niepełnosprawnych EUROPARAGEDON. Jest pomyślany jako hymn osób niepełnoprawnych.",
+    "Utwór został napisany na III Festiwal Aktywności Fizycznej Osób Niepełnosprawnych EUROPARAGEDON jako hymn osób niepełnoprawnych.",
   "photos.photo5Alt": "Paweł Mosiołek na koncercie parafialnym",
   "photos.photo5Caption": "Pożegnanie lata, 2024",
   "photos.photo5Description":
