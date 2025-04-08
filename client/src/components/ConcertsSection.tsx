@@ -230,7 +230,9 @@ const ConcertsSection = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
-                      aria-label={`Więcej informacji o koncercie ${concert.ticketLink}`}
+                      aria-label={`${t("concerts.buyTicket")} - ${
+                        concert.title
+                      }`}
                     >
                       {t("concerts.buyTicket")}
                       <svg
@@ -255,8 +257,9 @@ const ConcertsSection = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
-                      aria-label={`Zobacz szczegóły koncertu ${concert.title} w dniu ${concert.day} ${concert.month} ${concert.year}`}
-                      // aria-label={`Więcej informacji o koncercie ${concert.infoLink}`}
+                      aria-label={`${t("concerts.moreInfo")} - ${
+                        concert.title
+                      }`}
                     >
                       {t("concerts.moreInfo")}
                       <svg
@@ -281,7 +284,9 @@ const ConcertsSection = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
-                      aria-label={`Zobacz fotki z koncertu ${concert.photoLink}`}
+                      aria-label={`${t("concerts.photosAndReports")} - ${
+                        concert.title
+                      }`}
                     >
                       {t("concerts.photosAndReports")}
                       <svg
