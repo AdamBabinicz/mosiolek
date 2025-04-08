@@ -27,11 +27,12 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
-        entryFileNames: "assets/[name].js",
+        assetFileNames: "assets/[name][extname]",
         chunkFileNames: "assets/[name].js",
-        assetFileNames: "assets/[name].[ext]",
+        entryFileNames: "assets/[name].js",
       },
     },
   },
