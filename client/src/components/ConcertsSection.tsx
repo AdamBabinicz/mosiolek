@@ -88,7 +88,7 @@ const ConcertsSection = () => {
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             {t("concerts.title")}
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-700 dark:text-gray-200">
             {t("concerts.description")}
           </p>
         </div>

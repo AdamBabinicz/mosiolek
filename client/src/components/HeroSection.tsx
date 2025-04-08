@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div>
             <h1 className="text-4xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block">Paweł</span>
-              <span className="block text-blue-600 dark:text-blue-400">
+              <span className="block text-blue-700 dark:text-blue-300">
                 Mosiołek
               </span>
             </h1>
