@@ -447,7 +447,7 @@ export const translations = {
   "concerts.eventEnded": "Event Ended",
   "concerts.freeEntry": "Free Entry",
   "concerts.buyTicket": "Buy Ticket",
-  "concerts.moreInfo": "More Info",
+  "concerts.moreInfo": "Find more information",
   "concerts.photosAndReports": "Reports and Photos",
   "concerts.viewAllButton": "See All Concerts",
   "concerts.concert1.title": "Birthday Concert for Stasia Zielińska",
