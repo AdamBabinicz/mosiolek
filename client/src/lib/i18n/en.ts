@@ -2,7 +2,7 @@ export const translations = {
   // SEO
   "seo.homeTitle": "Paweł Mosiołek - Musician | Official Website",
   "seo.homeDescription":
-    "Official website of Paweł Mosiołek, artist, composer, and musician. Explore his works, concerts, photo galleries, and the latest artistic projects.",
+    "Official website of Paweł Mosiołek, artist, composer, and musician. Discover his works, concerts, photo galleries, and artistic projects. +48604103409",
 
   // Cookie Banner
   "cookieBanner.title": "We use cookies",
