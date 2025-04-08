@@ -450,7 +450,7 @@ export const translations = {
   "concerts.eventEnded": "Wydarzenie zakończone",
   "concerts.freeEntry": "Wstęp wolny",
   "concerts.buyTicket": "Kup bilet",
-  "concerts.moreInfo": "Więcej informacji",
+  "concerts.moreInfo": "Znajdź więcej informacji",
   "concerts.photosAndReports": "Relacja i zdjęcia",
   "concerts.viewAllButton": "Zobacz wszystkie koncerty",
   "concerts.concert1.title": "Urodzinowy koncert dla Stasia Zielińskiego",
