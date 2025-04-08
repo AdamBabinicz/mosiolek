@@ -450,7 +450,7 @@ export const translations = {
   "concerts.moreInfo": "Find more information",
   "concerts.photosAndReports": "Reports and Photos",
   "concerts.viewAllButton": "See All Concerts",
-  "concerts.concert1.title": "Birthday Concert for Stasia Zielińska",
+  "concerts.concert1.title": "Birthday Concert for Staś Zieliński",
   "concerts.concert1.description":
     "Start at 14:00. My performance is scheduled for 17:40, but it's worth coming earlier because there will be many attractions and performances by other artists.",
   "concerts.concert1.venue": "Public Primary School, Jastrząb",
