@@ -32,8 +32,8 @@ const Navbar = () => {
       href: "/#dyskografia",
       label: t("navbar.discography"),
       submenu: [
-        { href: "/singles-autorskie", label: t("navbar.authorSingles") },
-        { href: "/singles-wspolne", label: t("navbar.collaborationSingles") },
+        { href: "/single-autorskie", label: t("navbar.authorSingles") },
+        { href: "/single-wspolne", label: t("navbar.collaborationSingles") },
       ],
     },
     { href: "/#kontakt", label: t("navbar.contact") },

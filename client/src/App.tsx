@@ -38,8 +38,8 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/singles-autorskie" component={AuthorSinglesSection} />
-      <Route path="/singles-wspolne" component={CollaborativeSinglesSection} />
+      <Route path="/single-autorskie" component={AuthorSinglesSection} />
+      <Route path="/single-wspolne" component={CollaborativeSinglesSection} />
       <Route path="*" component={NotFound} />
     </Switch>
   );
