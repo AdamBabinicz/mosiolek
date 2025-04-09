@@ -423,7 +423,7 @@ export const translations = {
   "contact.contactInfo.phoneLabel": "Telefon",
   "contact.contactInfo.phone": "+48 604 103 409",
   "contact.contactInfo.managerLabel": "Menedżer",
-  "contact.contactInfo.manager": "manager@pawelmosiolek.pl",
+  "contact.contactInfo.manager": "siema@spokoagencja.pl",
   "contact.contactInfo.addressLabel": "Adres do korespondencji",
   "contact.contactInfo.address": "Muzyka Pawła Mosiołka<br>26-610 Radom",
   "contact.socialMedia.title": "Media społecznościowe",

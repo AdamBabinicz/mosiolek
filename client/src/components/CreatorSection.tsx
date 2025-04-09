@@ -117,12 +117,15 @@ const CreatorSection = () => {
               </h2>
               <div className="mt-6 text-gray-600 dark:text-gray-300 space-y-4">
                 <p
+                  className="text-left"
                   dangerouslySetInnerHTML={{ __html: t("creator.paragraph1") }}
                 ></p>
                 <p
+                  className="text-left"
                   dangerouslySetInnerHTML={{ __html: t("creator.paragraph2") }}
                 ></p>
                 <p
+                  className="text-left"
                   dangerouslySetInnerHTML={{ __html: t("creator.paragraph3") }}
                 ></p>
               </div>
