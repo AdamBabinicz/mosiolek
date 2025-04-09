@@ -1,6 +1,7 @@
 import { useTranslation } from "@/hooks/useTranslation";
 import { SiApplemusic, SiSpotify, SiYoutube } from "react-icons/si";
 import { BsShop } from "react-icons/bs";
+
 interface Album {
   id: number;
   title: string;
@@ -12,7 +13,7 @@ interface Album {
   listenUrl: string;
 }
 
-const DiscographySection = () => {
+const CollaborativeSinglesSection = () => {
   const { t } = useTranslation();
 
   const albums: Album[] = [
@@ -23,9 +24,7 @@ const DiscographySection = () => {
       feat: t("discography.album2.feat"),
       coverUrl: "/assets/10.avif",
       listenUrl: "https://www.youtube.com/watch?v=pyNEZH2duPs",
-      tracklist: [
-        // t("discography.album2.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album2.alt"),
     },
     {
@@ -35,9 +34,7 @@ const DiscographySection = () => {
       feat: t("discography.album19.feat"),
       coverUrl: "/assets/9.avif",
       listenUrl: "https://www.youtube.com/watch?v=jieUXgnNpHU",
-      tracklist: [
-        // t("discography.album2.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album19.alt"),
     },
     {
@@ -47,249 +44,57 @@ const DiscographySection = () => {
       feat: t("discography.album2.feat"),
       coverUrl: "/assets/11.avif",
       listenUrl: "https://www.youtube.com/watch?v=pExOWE2r7JI",
-      tracklist: [
-        // t("discography.album2.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album20.alt"),
     },
     {
       id: 4,
-      title: t("discography.album22.title"),
-      year: "2022-11-16",
-      feat: "",
-      coverUrl: "/assets/13.avif",
-      listenUrl: "https://www.youtube.com/watch?v=bKwYjenojjw",
-      tracklist: [
-        // t("discography.album20.track1"),
-      ],
-      alt: t("discography.album22.alt"),
-    },
-    {
-      id: 5,
       title: t("discography.album18.title"),
       year: "2023-01-24",
       feat: t("discography.album2.feat"),
       coverUrl: "/assets/8.avif",
       listenUrl: "https://www.youtube.com/watch?v=-DQWY3D9SPI",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album18.alt"),
     },
     {
-      id: 6,
-      title: t("discography.album13.title"),
-      year: "2023-05-30",
-      feat: "",
-      coverUrl: "/assets/3.avif",
-      listenUrl: "https://www.youtube.com/watch?v=AGnFP2oUZxk",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album13.alt"),
-    },
-    {
-      id: 7,
-      title: t("discography.album1.title"),
-      year: "2023-08-01",
-      feat: "",
-      coverUrl: "/assets/1.avif",
-      listenUrl: "https://www.youtube.com/watch?v=j6WheaJyHPg",
-      tracklist: [
-        // t("discography.album1.track1"),
-        // t("discography.album1.track2"),
-      ],
-      alt: t("discography.album1.alt"),
-    },
-    {
-      id: 8,
-      title: t("discography.album4.title"),
-      year: "2023-08-01",
-      feat: "",
-      coverUrl: "/assets/5.avif",
-      listenUrl: "https://www.youtube.com/watch?v=vtNqKiMl5UI",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album4.alt"),
-    },
-    {
-      id: 9,
-      title: t("discography.album5.title"),
-      year: "2023-08-01",
-      feat: "",
-      coverUrl: "/assets/6.avif",
-      listenUrl: "https://www.youtube.com/watch?v=El4HHwxI2Do",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album5.alt"),
-    },
-    {
-      id: 10,
-      title: t("discography.album14.title"),
-      year: "2023-08-01",
-      feat: "",
-      coverUrl: "/assets/7.avif",
-      listenUrl: "https://www.youtube.com/watch?v=itQuj9twpwM",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album14.alt"),
-    },
-    {
-      id: 11,
-      title: t("discography.album15.title"),
-      year: "2023-08-01",
-      feat: "",
-      coverUrl: "/assets/14.avif",
-      listenUrl: "https://www.youtube.com/watch?v=ZDX52ZcAA1I",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album15.alt"),
-    },
-    {
-      id: 12,
+      id: 5,
       title: t("discography.album12.title"),
       year: "2024-01-03",
       feat: t("discography.album12.feat"),
       coverUrl: "/assets/15.avif",
       listenUrl: "https://www.youtube.com/watch?v=fxXBxSGcgdg",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album12.alt"),
     },
     {
-      id: 13,
+      id: 6,
       title: t("discography.album11.title"),
       year: "2024-05-03",
       feat: t("discography.album11.feat"),
       coverUrl: "/assets/16.avif",
       listenUrl: "https://www.youtube.com/watch?v=Dwt3fHhL17E",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album11.alt"),
     },
     {
-      id: 14,
+      id: 7,
       title: t("discography.album21.title"),
       year: "2024-07-26",
       feat: t("discography.album21.feat"),
       coverUrl: "/assets/17.avif",
       listenUrl: "https://www.youtube.com/watch?v=bKwYjenojjw",
-      tracklist: [
-        // t("discography.album20.track1"),
-      ],
+      tracklist: [],
       alt: t("discography.album21.alt"),
     },
-    {
-      id: 15,
-      title: t("discography.album10.title"),
-      year: "2024-07-29",
-      feat: "",
-      coverUrl: "/assets/18.avif",
-      listenUrl: "https://www.youtube.com/watch?v=GYNPujyw_oY",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album10.alt"),
-    },
-    {
-      id: 16,
-      title: t("discography.album3.title"),
-      year: "2024-07-30",
-      feat: "",
-      coverUrl: "/assets/19.avif",
-      listenUrl: "https://www.youtube.com/watch?v=br_BGIsVeCw",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album3.alt"),
-    },
-
-    {
-      id: 17,
-      title: t("discography.album6.title"),
-      year: "2024-07-30",
-      feat: "",
-      coverUrl: "/assets/20.avif",
-      listenUrl: "https://www.youtube.com/watch?v=X1eVW80mdKU",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album6.alt"),
-    },
-    {
-      id: 18,
-      title: t("discography.album16.title"),
-      year: "2024-07-30",
-      feat: "",
-      coverUrl: "/assets/21.avif",
-      listenUrl: "https://www.youtube.com/watch?v=GYEiZr9uq4E",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album16.alt"),
-    },
-    {
-      id: 19,
-      title: t("discography.album17.title"),
-      year: "2024-07-30",
-      feat: "",
-      coverUrl: "/assets/22.avif",
-      listenUrl: "https://www.youtube.com/watch?v=scvBZZ72hSQ",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album17.alt"),
-    },
-    {
-      id: 20,
-      title: t("discography.album8.title"),
-      year: "2024-07-30",
-      feat: "",
-      coverUrl: "/assets/23.avif",
-      listenUrl: "https://www.youtube.com/watch?v=VbpAeKZMypM",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album8.alt"),
-    },
-    {
-      id: 21,
-      title: t("discography.album9.title"),
-      year: "2024-07-30",
-      feat: "",
-      coverUrl: "/assets/24.avif",
-      listenUrl: "https://www.youtube.com/watch?v=U4KO8yjpkV8",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album9.alt"),
-    },
-    {
-      id: 22,
-      title: t("discography.album7.title"),
-      year: "2024-08-30",
-      feat: "",
-      coverUrl: "/assets/25.avif",
-      listenUrl: "https://www.youtube.com/watch?v=A0pRGE6W5vo",
-      tracklist: [
-        // t("discography.album3.track1"),
-      ],
-      alt: t("discography.album7.alt"),
-    },
-  ];
+  ].sort((a, b) => new Date(a.year).getTime() - new Date(b.year).getTime());
 
   return (
-    <section id="dyskografia" className="py-24 bg-white dark:bg-gray-900">
+    <section id="single-wspolne" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            {t("navbar.discography")}
+            {t("navbar.collaborationSingles")}
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
             {t("discography.description")}
@@ -364,22 +169,6 @@ const DiscographySection = () => {
                         </a>
                       </div>
                     </div>
-                    <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                      {t("discography.tracklist")}
-                    </h4>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
-                      {album.tracklist.map((track, index) => (
-                        <li
-                          key={index}
-                          className="flex items-center text-gray-600 dark:text-gray-300"
-                        >
-                          <span className="mr-2 text-sm font-medium">
-                            {index + 1}.
-                          </span>
-                          {track}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                   <div className="mt-6">
                     <button
@@ -399,4 +188,4 @@ const DiscographySection = () => {
   );
 };
 
-export default DiscographySection;
+export default CollaborativeSinglesSection;

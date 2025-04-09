@@ -28,7 +28,7 @@ const Home = () => {
         <HeroSection />
         <PhotoGallery />
         <CreatorSection />
-        <DiscographySection />
+        {/* <DiscographySection /> */}
         <ContactSection />
         <ConcertsSection />
       </main>

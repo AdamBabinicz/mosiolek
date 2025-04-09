@@ -16,6 +16,8 @@ export const translations = {
   "navbar.photos": "Foto-teka",
   "navbar.creator": "Twórca",
   "navbar.discography": "Dyskografia",
+  "navbar.authorSingles": "Single autorskie",
+  "navbar.collaborationSingles": "Single wspólne",
   "navbar.contact": "Kontakt",
   "navbar.concerts": "Koncerty",
 

@@ -16,6 +16,8 @@ export const translations = {
   "navbar.photos": "Photos",
   "navbar.creator": "Creator",
   "navbar.discography": "Discography",
+  "navbar.authorSingles": "Author Singles",
+  "navbar.collaborationSingles": "Collaboration Singles",
   "navbar.contact": "Contact",
   "navbar.concerts": "Concerts",
 
