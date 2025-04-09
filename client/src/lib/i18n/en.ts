@@ -324,6 +324,7 @@ export const translations = {
   // Album 18
   "discography.album18.title": "Mirror",
   "discography.album18.alt": "Album cover Mirror",
+  "discography.album18.feat": "Features",
   "discography.album18.track1": "Podróż (Journey)",
   "discography.album18.track2": "Bez granic (Without Borders)",
   "discography.album18.track3": "Horyzont (Horizon)",
@@ -351,6 +352,7 @@ export const translations = {
   // Album 20
   "discography.album20.title": "Dreams Come True",
   "discography.album20.alt": "Album cover Marzenia się spełniają",
+  "discography.album20.feat": "Features",
   "discography.album20.track1": "Gościnnie (Feat.)",
   "discography.album20.track2": "Bez granic (Without Borders)",
   "discography.album20.track3": "Horyzont (Horizon)",
