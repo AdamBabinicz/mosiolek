@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "wouter";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "wouter";
 import { useTranslation } from "@/hooks/useTranslation";
 import ThemeToggle from "./ThemeToggle";
 import SimpleLanguageSwitcher from "./SimpleLanguageSwitcher";
@@ -15,6 +15,11 @@ import {
 const Navbar = () => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Przewija stronę do góry, gdy zmienia się ścieżka
+  }, [location]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -45,11 +50,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <a href="#" className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex-shrink-0 flex items-center">
               <span className="font-serif text-xl font-bold text-blue-600 dark:text-blue-400">
                 Paweł Mosiołek
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop navigation */}
