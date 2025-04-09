@@ -383,7 +383,13 @@ const DiscographySection = () => {
                   </div>
                   <div className="mt-6">
                     <button
-                      onClick={() => window.open(album.listenUrl, "_blank")}
+                      onClick={() =>
+                        window.open(
+                          album.listenUrl,
+                          "_blank",
+                          "noopener noreferrer"
+                        )
+                      }
                       className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition"
                     >
                       {t("discography.listenButton")}

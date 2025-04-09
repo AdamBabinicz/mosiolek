@@ -277,7 +277,6 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-
               <div className="mt-12">
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white">
                   {t("contact.socialMedia.title")}
@@ -305,7 +304,7 @@ const ContactSection = () => {
                     </span>
                     <i className="fab fa-instagram text-2xl"></i>
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -315,8 +314,8 @@ const ContactSection = () => {
                       {t("contact.socialMedia.youtube")}
                     </span>
                     <i className="fab fa-youtube text-2xl"></i>
-                  </a>
-                  <a
+                  </a> */}
+                  {/* <a
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -326,7 +325,7 @@ const ContactSection = () => {
                       {t("contact.socialMedia.spotify")}
                     </span>
                     <i className="fab fa-spotify text-2xl"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
