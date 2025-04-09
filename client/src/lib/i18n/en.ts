@@ -322,8 +322,8 @@ export const translations = {
   "discography.album17.track9": "Powrót (Return)",
 
   // Album 18
-  "discography.album18.title": "Black Clouds",
-  "discography.album18.alt": "Album cover Czarne chmury",
+  "discography.album18.title": "Mirror",
+  "discography.album18.alt": "Album cover Mirror",
   "discography.album18.track1": "Podróż (Journey)",
   "discography.album18.track2": "Bez granic (Without Borders)",
   "discography.album18.track3": "Horyzont (Horizon)",

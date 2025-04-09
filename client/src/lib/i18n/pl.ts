@@ -323,8 +323,8 @@ export const translations = {
   "discography.album17.track9": "Powrót",
 
   // Album 18
-  "discography.album18.title": "Czarne chmury",
-  "discography.album18.alt": "Okładka albumu Czarne chmury",
+  "discography.album18.title": "Lustro",
+  "discography.album18.alt": "Okładka albumu Lustro",
   "discography.album18.feat": "Współpraca",
   "discography.album18.track1": "Podróż",
   "discography.album18.track2": "Bez granic",
