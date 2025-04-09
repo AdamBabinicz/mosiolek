@@ -49,9 +49,10 @@ export const translations = {
     "57th National Festival of Polish Song Opole Debuts, 2020",
   "photos.photo3Description": "Where stars are born.",
   "photos.photo4Alt": "Studio recording",
-  "photos.photo4Caption": "At 'Koliber' studio, 2020",
+  "photos.photo4Caption":
+    "Justyna Łysak - Jończyk and Paweł Mosiołek in the music video 'Believe in Yourself Only', 2020.",
   "photos.photo4Description":
-    "Justyna Łysak - Jończyk and Paweł Mosiołek in the music video 'Believe only in yourself'.",
+    "The song was written for the 3rd Festival of Physical Activity for People with Disabilities EUROPARAGEDON as the anthem for people with disabilities.",
   "photos.photo5Alt": "Paweł Mosiołek at a parish concert",
   "photos.photo5Caption": "Farewell to Summer, 2024",
   "photos.photo5Description": "Parish Fair at St. Joseph's Parish in Radom.",
