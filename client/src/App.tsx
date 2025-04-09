@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { Switch, Route, useLocation } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AuthorSinglesSection from "@/components/AuthorSinglesSection";
 import CollaborativeSinglesSection from "@/components/CollaborativeSinglesSection";
+import { FaAngleUp } from "react-icons/fa";
 
 function Router() {
   useEffect(() => {
@@ -45,6 +46,40 @@ function Router() {
   );
 }
 
+function ScrollToTop() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  return (
+    isVisible && (
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg dark:bg-gray-700 dark:hover:bg-gray-900"
+      >
+        <FaAngleUp />
+      </button>
+    )
+  );
+}
 function App() {
   return (
     <>
@@ -62,6 +97,7 @@ function App() {
         <Footer />
       </div>
       <Toaster />
+      <ScrollToTop />
     </>
   );
 }
