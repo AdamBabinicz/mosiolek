@@ -204,7 +204,7 @@ const AuthorSinglesSection = () => {
                     </h3>
                     <p className="mb-6">{album.feat}</p>
                     <div className="border-b border-gray-200 dark:border-gray-700 mb-4 pb-4">
-                      <div className="flex space-x-4">
+                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                         <a
                           href="https://open.spotify.com/artist/1PvGZp6n4B360g4hBVpGjz"
                           target="_blank"
