@@ -86,7 +86,7 @@ export const translations = {
 
   // Discography Section
   "discography.description":
-    "Odkryj muzykę Pawła Mosiołka poprzez jego single i albumy. Pełna dyskografia artysty od starszych do najnowszych wydawnictw.",
+    "Odkryj muzykę z udziałem Pawła Mosiołka poprzez jego single feat. i albumy. Posłuchaj jego wyjątkowej współpracy z innymi artystami, od starszych hitów po najnowsze wydawnictwa.",
   "discography.tracklist": "🎙️",
   "discography.listenButton": "Posłuchaj albumu",
   "discography.streamingService.spotify": "Spotify",

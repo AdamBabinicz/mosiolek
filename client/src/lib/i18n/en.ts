@@ -85,7 +85,7 @@ export const translations = {
 
   // Discography Section
   "discography.description":
-    "Discover the music of Paweł Mosiołek through his singles and albums. The artist's complete discography from older to the latest releases.",
+    "Discover music featuring Paweł Mosiołek through his feat. singles and albums. Listen to his exceptional collaborations with other artists, from older hits to the latest releases.",
   "discography.tracklist": "🎙️",
   "discography.listenButton": "Listen to album",
   "discography.streamingService.spotify": "Spotify",
