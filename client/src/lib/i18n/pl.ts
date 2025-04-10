@@ -431,6 +431,7 @@ export const translations = {
   "contact.socialMedia.instagram": "Instagram",
   "contact.socialMedia.youtube": "YouTube",
   "contact.socialMedia.spotify": "Spotify",
+  "contact.socialMedia.messenger": "Messenger",
 
   // Concerts Section
   "concerts.title": "Koncerty",
