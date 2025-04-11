@@ -85,8 +85,10 @@ export const translations = {
   "creator.album3.alt": "Okładka albumu Bez Granic",
 
   // Discography Section
-  "discography.description":
-    "Odkryj muzykę z udziałem Pawła Mosiołka poprzez jego single feat. i albumy. Posłuchaj jego wyjątkowej współpracy z innymi artystami, od starszych hitów po najnowsze wydawnictwa.",
+  "discography.description.authorSingles":
+    "Zanurz się w muzyce Pawła Mosiołka — utwory, które oddają jego pasję i osobowość. Od energetycznych hitów po spokojniejsze melodie, każdy kawałek to wyjątkowa opowieść. Przeżyj, jak jego twórczość łączy emocje z dźwiękiem, tworząc niezapomniane chwile.",
+  "discography.description.collaborationSingles":
+    "Odkryj utwory, w których Paweł Mosiołek łączy siły z innymi artystami. Od niezapomnianych duetów po hity podbijające listy przebojów — przekonaj się, jak brzmi siła muzycznej współpracy.",
   "discography.tracklist": "🎙️",
   "discography.listenButton": "Posłuchaj albumu",
   "discography.streamingService.spotify": "Spotify",
@@ -381,7 +383,6 @@ export const translations = {
   // Album 22
   "discography.album22.title": "Na układy nie ma rady",
   "discography.album22.alt": "Okładka albumu Na układy nie ma rady",
-  "discography.album22.feat": "Współpraca",
   "discography.album22.track1": "Piosenka",
   "discography.album22.track2": "Bez granic",
   "discography.album22.track3": "Horyzont",
@@ -391,6 +392,16 @@ export const translations = {
   "discography.album22.track7": "Bez końca",
   "discography.album22.track8": "Spotkania",
   "discography.album22.track9": "Powrót",
+
+  // Album 23
+  "discography.album23.title": "Fakty",
+  "discography.album23.alt": "Okładka albumu Fakty",
+  "discography.album23.feat": "Współpraca",
+
+  // Album 24
+  "discography.album24.title": "Ostatnia szansa",
+  "discography.album24.alt": "Okładka Ostatnia szansa",
+  "discography.album24.feat": "Współpraca",
 
   // Contact Section
   "contact.title": "Kontakt",

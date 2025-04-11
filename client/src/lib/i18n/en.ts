@@ -17,7 +17,7 @@ export const translations = {
   "navbar.creator": "Creator",
   "navbar.discography": "Discography",
   "navbar.authorSingles": "Author Singles",
-  "navbar.collaborationSingles": "Collaboration Singles",
+  "navbar.collaborationSingles": "Featured Singles",
   "navbar.contact": "Contact",
   "navbar.concerts": "Concerts",
 
@@ -84,8 +84,10 @@ export const translations = {
   "creator.album3.alt": "Album cover Bez Granic",
 
   // Discography Section
-  "discography.description":
-    "Discover music featuring Paweł Mosiołek through his feat. singles and albums. Listen to his exceptional collaborations with other artists, from older hits to the latest releases.",
+  "discography.description.authorSingles":
+    "Immerse yourself in the music of Paweł Mosiołek — tracks that reflect his passion and personality. From energetic hits to calmer melodies, each piece is a unique story. Experience how his music combines emotions with sound, creating unforgettable moments.",
+  "discography.description.collaborationSingles":
+    "Discover tracks where Paweł Mosiołek teams up with other artists. From unforgettable duets to chart-topping hits — see how the power of musical collaboration sounds.",
   "discography.tracklist": "🎙️",
   "discography.listenButton": "Listen to album",
   "discography.streamingService.spotify": "Spotify",
@@ -112,7 +114,7 @@ export const translations = {
   // Album 2
   "discography.album2.title": "Always Be Yourself",
   "discography.album2.alt": "Album cover Czas",
-  "discography.album2.feat": "Features",
+  "discography.album2.feat": "Featuring",
   "discography.album2.track1": "Początek (Beginning)",
   "discography.album2.track2": "Historia (Story)",
   "discography.album2.track3": "Dzień po dniu (Day After Day)",
@@ -231,7 +233,7 @@ export const translations = {
   // Album 11
   "discography.album11.title": "You Win When You Fight",
   "discography.album11.alt": "Album cover Wygrywasz kiedy walczysz",
-  "discography.album11.feat": "Features",
+  "discography.album11.feat": "Featuring",
   "discography.album11.track1": "Podróż (Journey)",
   "discography.album11.track2": "Bez granic (Without Borders)",
   "discography.album11.track3": "Horyzont (Horizon)",
@@ -245,7 +247,7 @@ export const translations = {
   // Album 12
   "discography.album12.title": "I Don't Complain",
   "discography.album12.alt": "Album cover Nie narzekam",
-  "discography.album12.feat": "Features",
+  "discography.album12.feat": "Featuring",
   "discography.album12.track1": "Podróż (Journey)",
   "discography.album12.track2": "Bez granic (Without Borders)",
   "discography.album12.track3": "Horyzont (Horizon)",
@@ -324,7 +326,7 @@ export const translations = {
   // Album 18
   "discography.album18.title": "Mirror",
   "discography.album18.alt": "Album cover Mirror",
-  "discography.album18.feat": "Features",
+  "discography.album18.feat": "Featuring",
   "discography.album18.track1": "Podróż (Journey)",
   "discography.album18.track2": "Bez granic (Without Borders)",
   "discography.album18.track3": "Horyzont (Horizon)",
@@ -338,7 +340,7 @@ export const translations = {
   // Album 19
   "discography.album19.title": "Good Morning",
   "discography.album19.alt": "Album cover Dzień dobry",
-  "discography.album19.feat": "Features",
+  "discography.album19.feat": "Featuring",
   "discography.album19.track1": "Podróż (Journey)",
   "discography.album19.track2": "Bez granic (Without Borders)",
   "discography.album19.track3": "Horyzont (Horizon)",
@@ -352,7 +354,7 @@ export const translations = {
   // Album 20
   "discography.album20.title": "Dreams Come True",
   "discography.album20.alt": "Album cover Marzenia się spełniają",
-  "discography.album20.feat": "Features",
+  "discography.album20.feat": "Featuring",
   "discography.album20.track1": "Gościnnie (Feat.)",
   "discography.album20.track2": "Bez granic (Without Borders)",
   "discography.album20.track3": "Horyzont (Horizon)",
@@ -365,8 +367,8 @@ export const translations = {
 
   // Album 21
   "discography.album21.title": "What Was (Instrumental)",
-  "discography.album21.alt": "Album cover To co było (Instrumental)",
-  "discography.album21.feat": "Features",
+  "discography.album21.alt": "Cover of the album What Was (Instrumental)",
+  "discography.album21.feat": "Featuring",
   "discography.album21.track1": "Piosenka (Song)",
   "discography.album21.track2": "Bez granic (Without Borders)",
   "discography.album21.track3": "Horyzont (Horizon)",
@@ -378,9 +380,9 @@ export const translations = {
   "discography.album21.track9": "Powrót (Return)",
 
   // Album 22
-  "discography.album22.title": "There's no remedy for situation2",
-  "discography.album22.alt": "Album cover To co było (Instrumental)",
-  "discography.album22.feat": "Features",
+  "discography.album22.title": "No Cure for Arrangements",
+  "discography.album22.alt": "Cover of the album No Cure for Arrangements",
+  "discography.album22.feat": "Featuring",
   "discography.album22.track1": "Piosenka (Song)",
   "discography.album22.track2": "Bez granic (Without Borders)",
   "discography.album22.track3": "Horyzont (Horizon)",
@@ -390,6 +392,16 @@ export const translations = {
   "discography.album22.track7": "Bez końca (Without End)",
   "discography.album22.track8": "Spotkania (Meetings)",
   "discography.album22.track9": "Powrót (Return)",
+
+  // Album 23
+  "discography.album23.title": "Facts",
+  "discography.album23.alt": "Album cover of Facts",
+  "discography.album23.feat": "Featuring",
+
+  // Album 24
+  "discography.album24.title": "Last Chance",
+  "discography.album24.alt": "Album cover of Last Chance",
+  "discography.album24.feat": "Featuring",
 
   // Contact Section
   "contact.title": "Contact",
