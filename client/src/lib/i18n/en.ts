@@ -403,6 +403,76 @@ export const translations = {
   "discography.album24.alt": "Album cover of Last Chance",
   "discography.album24.feat": "Featuring",
 
+  // Album 25
+  "discography.album25.title": "To the Top",
+  "discography.album25.alt": "Cover of the album 'To the Top'",
+  "discography.album25.feat": "Featuring",
+
+  // Album 26
+  "discography.album26.title": "I Want to Tell You",
+  "discography.album26.alt": "Cover of the album 'I Want to Tell You'",
+  "discography.album26.feat": "Featuring",
+
+  // Album 27
+  "discography.album27.title": "You Close Your Eyes",
+  "discography.album27.alt": "Cover of the album 'You Close Your Eyes'",
+  "discography.album27.feat": "Featuring",
+
+  // Album 28
+  "discography.album28.title": "Testimony",
+  "discography.album28.alt": "Cover of the album 'Testimony'",
+  "discography.album28.feat": "Featuring",
+
+  // Album 29
+  "discography.album29.title": "Faith",
+  "discography.album29.alt": "Cover of the album 'Faith'",
+  "discography.album29.feat": "Featuring",
+
+  // Album 30
+  "discography.album30.title": "Requiem",
+  "discography.album30.alt": "Cover of the album 'Requiem'",
+  "discography.album30.feat": "Featuring",
+
+  // Album 31
+  "discography.album31.title": "Lorn",
+  "discography.album31.alt": "Cover of the album 'Lorn'",
+  "discography.album31.feat": "Featuring",
+
+  // Album 32
+  "discography.album32.title": "Each of Us",
+  "discography.album32.alt": "Cover of the album 'Each of Us'",
+  "discography.album32.feat": "Featuring",
+
+  // Album 33
+  "discography.album33.title": "Don't Ask",
+  "discography.album33.alt": "Cover of the album 'Don't Ask'",
+  "discography.album33.feat": "Featuring",
+
+  // Album 34
+  "discography.album34.title": "I Don't Need",
+  "discography.album34.alt": "Cover of the album 'I Don't Need'",
+  "discography.album34.feat": "Featuring",
+
+  // Album 35
+  "discography.album35.title": "Cold",
+  "discography.album35.alt": "Cover of the album 'Cold'",
+  "discography.album35.feat": "Featuring",
+
+  // Album 36
+  "discography.album36.title": "Man's Goodness",
+  "discography.album36.alt": "Cover of the album 'Man's Goodness'",
+  "discography.album36.feat": "Featuring",
+
+  // Album 37
+  "discography.album37.title": "Nevertheless",
+  "discography.album37.alt": "Cover of the album 'Nevertheless'",
+  "discography.album37.feat": "Featuring",
+
+  // Album 38
+  "discography.album38.title": "Believe Me",
+  "discography.album38.alt": "Cover of the album 'Believe Me'",
+  "discography.album38.feat": "Featuring",
+
   // Contact Section
   "contact.title": "Contact",
   "contact.description":

@@ -400,8 +400,78 @@ export const translations = {
 
   // Album 24
   "discography.album24.title": "Ostatnia szansa",
-  "discography.album24.alt": "Okładka Ostatnia szansa",
+  "discography.album24.alt": "Okładka albumu Ostatnia szansa",
   "discography.album24.feat": "Współpraca",
+
+  // Album 25
+  "discography.album25.title": "Na szczyt",
+  "discography.album25.alt": "Okładka albumu Na szczyt",
+  "discography.album25.feat": "Współpraca",
+
+  // Album 26
+  "discography.album26.title": "Chcę Ci powiedzieć",
+  "discography.album26.alt": "Okładka albumu Chcę Ci powiedzieć",
+  "discography.album26.feat": "Współpraca",
+
+  // Album 27
+  "discography.album27.title": "Zamykasz oczy",
+  "discography.album27.alt": "Okładka albumu Zamykasz oczy",
+  "discography.album27.feat": "Współpraca",
+
+  // Album 28
+  "discography.album28.title": "Świadectwo",
+  "discography.album28.alt": "Okładka albumu Świadectwo",
+  "discography.album28.feat": "Współpraca",
+
+  // Album 29
+  "discography.album29.title": "Wiara",
+  "discography.album29.alt": "Okładka albumu Wiara",
+  "discography.album29.feat": "Współpraca",
+
+  // Album 30
+  "discography.album30.title": "Requiem",
+  "discography.album30.alt": "Okładka albumu Requiem",
+  "discography.album30.feat": "Współpraca",
+
+  // Album 31
+  "discography.album31.title": "Lorn",
+  "discography.album31.alt": "Okładka albumu Lorn",
+  "discography.album31.feat": "Współpraca",
+
+  // Album 32
+  "discography.album32.title": "Każdy z nas",
+  "discography.album32.alt": "Okładka albumu Każdy z nas",
+  "discography.album32.feat": "Współpraca",
+
+  // Album 33
+  "discography.album33.title": "Nie pytaj",
+  "discography.album33.alt": "Okładka albumu Nie pytaj",
+  "discography.album33.feat": "Współpraca",
+
+  // Album 34
+  "discography.album34.title": "Nie potrzeba mi",
+  "discography.album34.alt": "Okładka albumu Nie potrzeba mi",
+  "discography.album34.feat": "Współpraca",
+
+  // Album 35
+  "discography.album35.title": "Chłód",
+  "discography.album35.alt": "Okładka albumu Chłód",
+  "discography.album35.feat": "Współpraca",
+
+  // Album 36
+  "discography.album36.title": "Człowieka dobro",
+  "discography.album36.alt": "Okładka albumu Człowieka dobro",
+  "discography.album36.feat": "Współpraca",
+
+  // Album 37
+  "discography.album37.title": "Mimo wszystko",
+  "discography.album37.alt": "Okładka albumu Mimo wszystko",
+  "discography.album37.feat": "Współpraca",
+
+  // Album 38
+  "discography.album38.title": "Uwierz mi",
+  "discography.album38.alt": "Okładka albumu Uwierz mi",
+  "discography.album38.feat": "Współpraca",
 
   // Contact Section
   "contact.title": "Kontakt",
