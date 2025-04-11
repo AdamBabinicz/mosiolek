@@ -393,7 +393,8 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.spotifyUrl || "#"}
                           target={album.spotifyUrl ? "_blank" : "_self"}
-                          rel="noopener noreferrer"
+                          // rel="noopener noreferrer"
+                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.spotifyUrl
                               ? "text-green-600 dark:text-green-400 hover:underline"
@@ -408,7 +409,8 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.youtubeUrl || "#"}
                           target={album.youtubeUrl ? "_blank" : "_self"}
-                          rel="noopener noreferrer"
+                          // rel="noopener noreferrer"
+                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.youtubeUrl
                               ? "text-red-600 dark:text-red-400 hover:underline"
@@ -423,7 +425,8 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.appleMusicUrl || "#"}
                           target={album.appleMusicUrl ? "_blank" : "_self"}
-                          rel="noopener noreferrer"
+                          // rel="noopener noreferrer"
+                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.appleMusicUrl
                               ? "text-pink-600 dark:text-pink-400 hover:underline"
@@ -438,7 +441,8 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.empikUrl || "#"}
                           target={album.empikUrl ? "_blank" : "_self"}
-                          rel="noopener noreferrer"
+                          // rel="noopener noreferrer"
+                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.empikUrl
                               ? "text-yellow-600 dark:text-yellow-400 hover:underline"
