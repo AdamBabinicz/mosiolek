@@ -12,13 +12,22 @@ const Home = () => {
   const { language } = useLanguage();
   const { t } = useTranslation();
 
+  const title =
+    language === "en"
+      ? t("seo.homeTitle")
+      : "Paweł Mosiołek - Muzyk, Artysta | Oficjalna strona";
+  const description =
+    language === "en"
+      ? t("seo.homeDescription")
+      : "Oficjalna strona Pawła Mosiołka, artysty, kompozytora i muzyka. Poznaj jego twórczość, koncerty, galerie zdjęć oraz projekty artystyczne. +48604103409";
+
   return (
     <>
       <Helmet>
-        <title>{t("seo.homeTitle")}</title>
-        <meta name="description" content={t("seo.homeDescription")} />
-        <meta property="og:title" content={t("seo.homeTitle")} />
-        <meta property="og:description" content={t("seo.homeDescription")} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={window.location.href} />
         <html lang={language} />
@@ -28,7 +37,6 @@ const Home = () => {
         <HeroSection />
         <PhotoGallery />
         <CreatorSection />
-        {/* <DiscographySection /> */}
         <ContactSection />
         <ConcertsSection />
       </main>
