@@ -41,7 +41,7 @@ const CollaborativeSinglesSection = () => {
       title: t("discography.album19.title"),
       year: "2021-11-24",
       feat: t("discography.album19.feat"),
-      coverUrl: "/assets/9.avif",
+      coverUrl: "/assets/img/56.avif",
       listenUrl: "https://www.youtube.com/watch?v=jieUXgnNpHU",
       spotifyUrl: "https://open.spotify.com/track/15RvmEJgjqMrQb10KcvsaQ",
       youtubeUrl: "https://www.youtube.com/watch?v=IE2mRRT1t6g",
