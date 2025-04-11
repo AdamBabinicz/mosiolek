@@ -15,6 +15,22 @@ export default defineConfig({
           ),
         ]
       : []),
+    {
+      name: "custom-middleware", // Możesz dodać własną nazwę
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          // Sprawdzamy, czy req.url jest zdefiniowane
+          if (req.url?.endsWith(".html")) {
+            const baseUrl = req.url?.startsWith("/") ? "" : "/"; // Dodajemy podstawową ścieżkę
+            res.setHeader(
+              "Link",
+              `<${baseUrl}/assets/style.css>; rel=preload; as=style`
+            );
+          }
+          next();
+        });
+      },
+    },
   ],
   resolve: {
     alias: {
