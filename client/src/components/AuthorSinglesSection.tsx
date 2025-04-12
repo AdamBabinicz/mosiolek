@@ -297,7 +297,7 @@ const AuthorSinglesSection = () => {
                           className={`flex items-center ${
                             album.spotifyUrl
                               ? "text-green-700 dark:text-green-300 hover:underline"
-                              : "text-gray-300 cursor-not-allowed pointer-events-none"
+                              : "text-gray-400 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <SiSpotify className="h-5 w-5 mr-2" />
@@ -328,7 +328,7 @@ const AuthorSinglesSection = () => {
                           className={`flex items-center ${
                             album.appleMusicUrl
                               ? "text-pink-700 dark:text-pink-300 hover:underline"
-                              : "text-gray-300 cursor-not-allowed pointer-events-none"
+                              : "text-gray-400 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <SiApplemusic className="h-5 w-5 mr-2" />
@@ -344,7 +344,7 @@ const AuthorSinglesSection = () => {
                           className={`flex items-center ${
                             album.empikUrl
                               ? "text-yellow-700 dark:text-yellow-300 hover:underline"
-                              : "text-gray-300 cursor-not-allowed pointer-events-none"
+                              : "text-gray-400 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <BsShop className="h-5 w-5 mr-2" />
