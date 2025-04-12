@@ -133,7 +133,7 @@ const CreatorSection = () => {
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
                   href="https://open.spotify.com/artist/1PvGZp6n4B360g4hBVpGjz"
-                  className="flex items-center text-green-600 dark:text-green-400 hover:underline "
+                  className="flex items-center text-green-700 dark:text-green-300 hover:underline "
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Spotify link"
