@@ -301,9 +301,7 @@ const AuthorSinglesSection = () => {
                           }`}
                         >
                           <SiSpotify className="h-5 w-5 mr-2" />
-                          <span>
-                            {t("discography.streamingService.spotify")}
-                          </span>
+                          <p>{t("discography.streamingService.spotify")}</p>
                         </a>
                         <a
                           href={album.youtubeUrl || "#"}
@@ -316,14 +314,11 @@ const AuthorSinglesSection = () => {
                           }`}
                         >
                           <SiYoutube className="h-5 w-5 mr-2" />
-                          <span>
-                            {t("discography.streamingService.youtube")}
-                          </span>
+                          <p>{t("discography.streamingService.youtube")}</p>
                         </a>
                         <a
                           href={album.appleMusicUrl || "#"}
                           target={album.appleMusicUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.appleMusicUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.appleMusicUrl
@@ -332,14 +327,11 @@ const AuthorSinglesSection = () => {
                           }`}
                         >
                           <SiApplemusic className="h-5 w-5 mr-2" />
-                          <span>
-                            {t("discography.streamingService.appleMusic")}
-                          </span>
+                          <p>{t("discography.streamingService.appleMusic")}</p>
                         </a>
                         <a
                           href={album.empikUrl || "#"}
                           target={album.empikUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.empikUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.empikUrl
@@ -348,7 +340,7 @@ const AuthorSinglesSection = () => {
                           }`}
                         >
                           <BsShop className="h-5 w-5 mr-2" />
-                          <span>{t("discography.streamingService.empik")}</span>
+                          <p>{t("discography.streamingService.empik")}</p>
                         </a>
                       </div>
                     </div>

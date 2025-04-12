@@ -401,9 +401,7 @@ const CollaborativeSinglesSection = () => {
                           }`}
                         >
                           <SiSpotify className="h-5 w-5 mr-2" />
-                          <span>
-                            {t("discography.streamingService.spotify")}
-                          </span>
+                          <p>{t("discography.streamingService.spotify")}</p>
                         </a>
                         <a
                           href={album.youtubeUrl || "#"}
@@ -416,9 +414,7 @@ const CollaborativeSinglesSection = () => {
                           }`}
                         >
                           <SiYoutube className="h-5 w-5 mr-2" />
-                          <span>
-                            {t("discography.streamingService.youtube")}
-                          </span>
+                          <p>{t("discography.streamingService.youtube")}</p>
                         </a>
                         <a
                           href={album.appleMusicUrl || "#"}
@@ -431,9 +427,7 @@ const CollaborativeSinglesSection = () => {
                           }`}
                         >
                           <SiApplemusic className="h-5 w-5 mr-2" />
-                          <span>
-                            {t("discography.streamingService.appleMusic")}
-                          </span>
+                          <p>{t("discography.streamingService.appleMusic")}</p>
                         </a>
                         <a
                           href={album.empikUrl || "#"}
@@ -446,7 +440,7 @@ const CollaborativeSinglesSection = () => {
                           }`}
                         >
                           <BsShop className="h-5 w-5 mr-2" />
-                          <span>{t("discography.streamingService.empik")}</span>
+                          <p>{t("discography.streamingService.empik")}</p>
                         </a>
                       </div>
                     </div>
