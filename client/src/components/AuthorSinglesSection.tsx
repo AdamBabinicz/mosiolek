@@ -296,8 +296,8 @@ const AuthorSinglesSection = () => {
                           rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.spotifyUrl
-                              ? "text-green-600 dark:text-green-400 hover:underline"
-                              : "text-gray-400 cursor-not-allowed pointer-events-none"
+                              ? "text-green-700 dark:text-green-300 hover:underline"
+                              : "text-gray-300 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <SiSpotify className="h-5 w-5 mr-2" />
@@ -308,7 +308,6 @@ const AuthorSinglesSection = () => {
                         <a
                           href={album.youtubeUrl || "#"}
                           target={album.youtubeUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.youtubeUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.youtubeUrl
@@ -328,8 +327,8 @@ const AuthorSinglesSection = () => {
                           rel={album.appleMusicUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.appleMusicUrl
-                              ? "text-pink-600 dark:text-pink-400 hover:underline"
-                              : "text-gray-400 cursor-not-allowed pointer-events-none"
+                              ? "text-pink-700 dark:text-pink-300 hover:underline"
+                              : "text-gray-300 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <SiApplemusic className="h-5 w-5 mr-2" />
@@ -344,8 +343,8 @@ const AuthorSinglesSection = () => {
                           rel={album.empikUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.empikUrl
-                              ? "text-yellow-600 dark:text-yellow-400 hover:underline"
-                              : "text-gray-400 cursor-not-allowed pointer-events-none"
+                              ? "text-yellow-700 dark:text-yellow-300 hover:underline"
+                              : "text-gray-300 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <BsShop className="h-5 w-5 mr-2" />
