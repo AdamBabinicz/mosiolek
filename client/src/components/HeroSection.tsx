@@ -47,6 +47,7 @@ const HeroSection = () => {
                 src="/assets/2.avif"
                 alt={t("hero.imageAlt")}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-700 p-4 rounded-md shadow-lg z-10 max-w-xs dark:text-white">
