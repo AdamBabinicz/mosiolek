@@ -163,7 +163,7 @@ const CreatorSection = () => {
                 </a>
                 <a
                   href="https://www.instagram.com/pawelmosiolek"
-                  className="flex items-center text-pink-700 dark:text-pink-400 hover:underline"
+                  className="flex items-center text-pink-700 dark:text-pink-300 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram link"
