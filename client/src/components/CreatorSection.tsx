@@ -136,6 +136,7 @@ const CreatorSection = () => {
                   className="flex items-center text-green-600 dark:text-green-400 hover:underline "
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Spotify link"
                 >
                   <FaSpotify className="h-5 w-5 mr-2" />
                   <p>Spotify</p>
@@ -163,6 +164,7 @@ const CreatorSection = () => {
                   className="flex items-center text-pink-600 dark:text-pink-400 hover:text-pink-700 hover:underline transition-all duration-500 delay-400"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Instagram link"
                 >
                   <FaInstagram className="h-5 w-5 mr-2" />
                   <p>Instagram</p>
