@@ -27,9 +27,9 @@ const AuthorSinglesSection = () => {
       year: "2022-11-16",
       feat: "",
       coverUrl: "/assets/13.avif",
-      listenUrl: "https://www.youtube.com/watch?v=bKwYjenojjw",
+      listenUrl: "https://www.youtube.com/watch?v=Q6OyiJmIC9s",
       spotifyUrl: "",
-      youtubeUrl: "https://www.youtube.com/watch?v=bKwYjenojjw",
+      youtubeUrl: "https://www.youtube.com/watch?v=Q6OyiJmIC9s",
       appleMusicUrl:
         "https://music.apple.com/pl/album/na-uk%C5%82ady-nie-ma-rady/1654991436?i=1654991438",
       empikUrl:
@@ -293,7 +293,6 @@ const AuthorSinglesSection = () => {
                         <a
                           href={album.spotifyUrl || "#"}
                           target={album.spotifyUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.spotifyUrl
@@ -310,7 +309,7 @@ const AuthorSinglesSection = () => {
                           href={album.youtubeUrl || "#"}
                           target={album.youtubeUrl ? "_blank" : "_self"}
                           // rel="noopener noreferrer"
-                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
+                          rel={album.youtubeUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.youtubeUrl
                               ? "text-red-600 dark:text-red-400 hover:underline"
@@ -326,7 +325,7 @@ const AuthorSinglesSection = () => {
                           href={album.appleMusicUrl || "#"}
                           target={album.appleMusicUrl ? "_blank" : "_self"}
                           // rel="noopener noreferrer"
-                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
+                          rel={album.appleMusicUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.appleMusicUrl
                               ? "text-pink-600 dark:text-pink-400 hover:underline"
@@ -342,7 +341,7 @@ const AuthorSinglesSection = () => {
                           href={album.empikUrl || "#"}
                           target={album.empikUrl ? "_blank" : "_self"}
                           // rel="noopener noreferrer"
-                          rel={album.spotifyUrl ? "noopener noreferrer" : ""}
+                          rel={album.empikUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.empikUrl
                               ? "text-yellow-600 dark:text-yellow-400 hover:underline"
