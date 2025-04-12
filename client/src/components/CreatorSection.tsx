@@ -146,6 +146,7 @@ const CreatorSection = () => {
                   className="flex items-center text-red-600 dark:text-red-400 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Youtube link"
                 >
                   <FaYoutube className="h-5 w-5 mr-2" />
                   <p>YouTube</p>
@@ -155,6 +156,7 @@ const CreatorSection = () => {
                   className="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Facebook link"
                 >
                   <FaFacebook className="h-5 w-5 mr-2" />
                   <p>Facebook</p>
