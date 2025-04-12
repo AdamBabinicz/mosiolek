@@ -108,7 +108,7 @@ const CreatorSection = () => {
   };
 
   return (
-    <section id="tworca" className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="tworca" className="py-24 bg-gray-100 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           <div className="lg:order-2 mb-12 lg:mb-0">
