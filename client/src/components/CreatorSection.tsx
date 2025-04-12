@@ -138,7 +138,7 @@ const CreatorSection = () => {
                   rel="noopener noreferrer"
                 >
                   <FaSpotify className="h-5 w-5 mr-2" />
-                  <span>Spotify</span>
+                  <p>Spotify</p>
                 </a>
                 <a
                   href="https://www.youtube.com/user/pawelmosiolek"
@@ -147,7 +147,7 @@ const CreatorSection = () => {
                   rel="noopener noreferrer"
                 >
                   <FaYoutube className="h-5 w-5 mr-2" />
-                  <span>YouTube</span>
+                  <p>YouTube</p>
                 </a>
                 <a
                   href="https://www.facebook.com/PAWELMOSIOLEK1976"
@@ -156,7 +156,7 @@ const CreatorSection = () => {
                   rel="noopener noreferrer"
                 >
                   <FaFacebook className="h-5 w-5 mr-2" />
-                  <span>Facebook</span>
+                  <p>Facebook</p>
                 </a>
                 <a
                   href="https://www.instagram.com/pawelmosiolek"
@@ -165,7 +165,7 @@ const CreatorSection = () => {
                   rel="noopener noreferrer"
                 >
                   <FaInstagram className="h-5 w-5 mr-2" />
-                  <span>Instagram</span>
+                  <p>Instagram</p>
                 </a>
               </div>
             </div>
