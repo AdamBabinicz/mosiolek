@@ -270,7 +270,7 @@ const AuthorSinglesSection = () => {
           {albums.map((album) => (
             <div
               key={album.id}
-              className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+              className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden"
             >
               <div className="lg:flex">
                 <div className="lg:w-1/3">
