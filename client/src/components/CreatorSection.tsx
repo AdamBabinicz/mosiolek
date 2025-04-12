@@ -180,6 +180,7 @@ const CreatorSection = () => {
                 src="/assets/img/1.avif"
                 alt="Paweł Mosiołek - portret"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-white dark:bg-gray-700 p-3 md:p-4 rounded-md shadow-lg max-w-xs">
