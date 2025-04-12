@@ -116,7 +116,7 @@ const CreatorSection = () => {
               <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 {t("creator.title")}
               </h2>
-              <div className="mt-6 text-gray-600 dark:text-gray-300 space-y-4">
+              <div className="mt-6 text-gray-700 dark:text-gray-200 space-y-4">
                 <p
                   className="text-left"
                   dangerouslySetInnerHTML={{ __html: t("creator.paragraph1") }}
@@ -133,7 +133,7 @@ const CreatorSection = () => {
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
                   href="https://open.spotify.com/artist/1PvGZp6n4B360g4hBVpGjz"
-                  className="flex items-center text-green-600 dark:text-green-400 hover:underline transition-all duration-300 delay-200"
+                  className="flex items-center text-green-600 dark:text-green-400 hover:underline "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
