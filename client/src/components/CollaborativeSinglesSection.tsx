@@ -356,7 +356,7 @@ const CollaborativeSinglesSection = () => {
   ].sort((a, b) => new Date(a.year).getTime() - new Date(b.year).getTime());
 
   return (
-    <section id="single-wspolne" className="py-24 bg-white dark:bg-gray-900">
+    <section id="single-wspolne" className="py-24 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
@@ -370,7 +370,7 @@ const CollaborativeSinglesSection = () => {
           {albums.map((album) => (
             <div
               key={album.id}
-              className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+              className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden"
             >
               <div className="lg:flex">
                 <div className="lg:w-1/3">
@@ -393,12 +393,11 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.spotifyUrl || "#"}
                           target={album.spotifyUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.spotifyUrl
-                              ? "text-green-600 dark:text-green-400 hover:underline"
-                              : "text-gray-400 cursor-not-allowed pointer-events-none"
+                              ? "text-green-700 dark:text-green-300 hover:underline"
+                              : "text-gray-300 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <SiSpotify className="h-5 w-5 mr-2" />
@@ -409,7 +408,6 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.youtubeUrl || "#"}
                           target={album.youtubeUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.youtubeUrl
@@ -425,12 +423,11 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.appleMusicUrl || "#"}
                           target={album.appleMusicUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.appleMusicUrl
-                              ? "text-pink-600 dark:text-pink-400 hover:underline"
-                              : "text-gray-400 cursor-not-allowed pointer-events-none"
+                              ? "text-pink-700 dark:text-pink-300 hover:underline"
+                              : "text-gray-300 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <SiApplemusic className="h-5 w-5 mr-2" />
@@ -441,12 +438,11 @@ const CollaborativeSinglesSection = () => {
                         <a
                           href={album.empikUrl || "#"}
                           target={album.empikUrl ? "_blank" : "_self"}
-                          // rel="noopener noreferrer"
                           rel={album.spotifyUrl ? "noopener noreferrer" : ""}
                           className={`flex items-center ${
                             album.empikUrl
-                              ? "text-yellow-600 dark:text-yellow-400 hover:underline"
-                              : "text-gray-400 cursor-not-allowed pointer-events-none"
+                              ? "text-yellow-700 dark:text-yellow-300 hover:underline"
+                              : "text-gray-300 cursor-not-allowed pointer-events-none"
                           }`}
                         >
                           <BsShop className="h-5 w-5 mr-2" />
