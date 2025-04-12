@@ -215,7 +215,11 @@ const ContactSection = () => {
               </form>
             </Form>
           </div> */}
-          <img src="/assets/4.avif" alt="Portret Pawła Mosiołka" />
+          <img
+            src="/assets/4.avif"
+            alt="Portret Pawła Mosiołka"
+            loading="lazy"
+          />
           <div className="mt-16 lg:mt-0">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 h-full">
               <h3 className="text-xl font-medium text-gray-900 dark:text-white">
