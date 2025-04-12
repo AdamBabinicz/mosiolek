@@ -116,7 +116,7 @@ const CreatorSection = () => {
               <h2 className="text-3xl font-bold font-serif tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 {t("creator.title")}
               </h2>
-              <div className="mt-6 text-gray-700 dark:text-gray-200 space-y-4">
+              <div className="mt-6 text-gray-800 dark:text-gray-100 space-y-4">
                 <p
                   className="text-left"
                   dangerouslySetInnerHTML={{ __html: t("creator.paragraph1") }}
