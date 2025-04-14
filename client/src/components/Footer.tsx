@@ -115,7 +115,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#start"
+                  href="/#start"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("footer.start")}
@@ -123,7 +123,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#foto-teka"
+                  href="/#foto-teka"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("footer.photos")}
@@ -131,7 +131,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#tworca"
+                  href="/#tworca"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("footer.creator")}
@@ -139,7 +139,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#kontakt"
+                  href="/#kontakt"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("footer.contact")}
@@ -147,7 +147,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#koncerty"
+                  href="/#koncerty"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("footer.concerts")}
