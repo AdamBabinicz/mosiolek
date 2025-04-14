@@ -7,8 +7,21 @@ import CreatorSection from "@/components/CreatorSection";
 import ContactSection from "@/components/ContactSectionSimple";
 import ConcertsSection from "@/components/ConcertsSection";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        // Odroczony scroll, żeby komponenty miały czas się wyrenderować
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, []);
   const { language } = useLanguage();
   const { t } = useTranslation();
 
