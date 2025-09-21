@@ -1,13 +1,20 @@
+# Konfiguracja budowania dla Netlify
 [build]
-  base = "client"
+  # Uruchom komendę z głównego folderu repozytorium (nie wchodź do 'client')
   command = "npm run build"
-  publish = "dist"
 
+  # Opublikuj zawartość folderu 'dist/public', gdzie Vite umieszcza gotową aplikację kliencką
+  publish = "dist/public"
+
+# Reguła przekierowania dla aplikacji typu Single Page Application (SPA).
+# Wszystkie żądania kieruje do index.html, aby routing po stronie klienta działał poprawnie.
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+# Opcjonalne, ale dobre dla wydajności: informuje przeglądarki, że zawartość
+# może się różnić w zależności od sposobu kodowania (np. gzip).
 [[headers]]
   for = "/*"
   [headers.values]
