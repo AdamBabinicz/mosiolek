@@ -504,7 +504,7 @@ export const translations = {
   "contact.contactInfo.phoneLabel": "Phone",
   "contact.contactInfo.phone": "+48 604 103 409",
   "contact.contactInfo.managerLabel": "Manager",
-  "contact.contactInfo.manager": "siema@spokoagencja.pl",
+  "contact.contactInfo.manager": "pawlo3@autograf.pl",
   "contact.contactInfo.addressLabel": "Mailing Address",
   "contact.contactInfo.address": "Paweł Mosiołek Music<br>26-610 Radom",
   "contact.socialMedia.title": "Social Media",
