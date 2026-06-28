@@ -502,7 +502,7 @@ export const translations = {
   "contact.contactInfo.emailLabel": "Email",
   "contact.contactInfo.email": "pawlo3@autograf.pl",
   "contact.contactInfo.phoneLabel": "Telefon",
-  "contact.contactInfo.phone": "+48 604 103 409",
+  "contact.contactInfo.phone": "☎️",
   "contact.contactInfo.managerLabel": "Menedżer",
   "contact.contactInfo.manager": "pawlo3@autograf.pl",
   "contact.contactInfo.addressLabel": "Adres do korespondencji",
@@ -575,6 +575,6 @@ export const translations = {
   "footer.bio":
     "Muzyk, kompozytor i wokalista, którego pasja do muzyki przejawia się w różnorodnych projektach.",
   "footer.contactEmail": "pawlo3@autograf.pl",
-  "footer.contactPhone": "+48 604 103 409",
+  "footer.contactPhone": "☎️",
   "footer.location": "Radom, Polska",
 };
